@@ -21,7 +21,7 @@ export default function EventsSection() {
         <div className="mb-40 flex flex-col md:flex-row justify-between items-end border-b border-white/10 pb-16">
           <div className="max-w-2xl">
            
-            <h2 className="text-6xl md:text-9xl font-black tracking-tighter leading-[0.8] uppercase">
+            <h2 className="text-6xl md:text-5xl font-black tracking-tighter leading-[0.8] uppercase">
               Event<br /><span className="text-white/20 italic">Timeline.</span>
             </h2>
           </div>
@@ -76,17 +76,12 @@ export default function EventsSection() {
                     <div className="relative aspect-[9/16] rounded-[20px] overflow-hidden">
                       <img 
                         src={event.img} 
-                        className="w-full h-full object-cover  opacity-40  " 
+                        className="w-full h-full object-cover  " 
                         alt={event.name} 
                       />
                       <div className="absolute inset-0 " />
                       
-                      {/* Technical Meta-Data Overlay */}
-                      <div className="absolute top-6 left-6 flex flex-col gap-1">
-                        <span className="bg-[#FFCC00] text-black text-[9px] font-black px-2 py-1 rounded-sm uppercase tracking-tighter">
-                          Verified Arena
-                        </span>
-                      </div>
+                     
                     </div>
                   </div>
 
@@ -126,18 +121,7 @@ export default function EventsSection() {
           ))}
         </div>
 
-        {/* --- 3. ARCHITECTURAL FOOTER --- */}
-        <div className="mt-40 pt-40 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-10">
-           <div className="text-left">
-             <p className="text-[clamp(1rem,4vw,2rem)] font-black tracking-tighter opacity-10 uppercase">Global Sync // Symposium 2026</p>
-           </div>
-           <div className="flex gap-10">
-              <div className="text-right">
-                <p className="text-[9px] font-black text-gray-700 tracking-[0.5em] uppercase">Sequence End</p>
-                <p className="text-xs font-bold text-gray-500">End of Day 02</p>
-              </div>
-           </div>
-        </div>
+       
 
       </div>
     </section>

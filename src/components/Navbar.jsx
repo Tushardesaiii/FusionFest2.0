@@ -39,15 +39,27 @@ function Navbar() {
         
         {/* --- LEFT: BRAND IDENTITY --- */}
         <div className="flex flex-col gap-0.5">
-          <div className="flex items-center gap-3">
-             <div className="w-1.5 h-1.5 bg-[#FFCC00] rounded-full shadow-[0_0_10px_#FFCC00]" />
-             <a href="#" className="text-2xl md:text-3xl font-black tracking-[-0.04em] text-white uppercase italic">
-               GTU-SET's
-             </a>
-             <a href="#" className="text-2xl md:text-3xl font-black tracking-[-0.04em] text-[#FFCC00] uppercase italic">
-               Fusion Fest <span className="text-white ">2.0</span>
-             </a>
-          </div>
+        <div className="flex items-center gap-4 group">
+  {/* LOGO: Defined height with aspect-auto for sharpness */}
+  <img 
+    src="/gtu_logo.png" 
+    alt="GTU Logo" 
+    className="h-10 md:h-12 w-auto object-contain brightness-110" 
+  />
+
+  {/* WRAPPER: One link for better UX, prevents weird text gaps */}
+  <a href="#" className="flex flex-col md:flex-row md:items-center md:gap-3 leading-none">
+    {/* COLLEGE TAG */}
+    <span className="text-xl md:text-2xl font-[1000] tracking-tighter text-white uppercase italic opacity-90 transition-all group-hover:opacity-100">
+      GTU-SET's
+    </span>
+
+    {/* EVENT NAME */}
+    <span className="text-2xl md:text-3xl font-[1000] tracking-[-0.06em] text-[#FFCC00] uppercase italic whitespace-nowrap">
+      Fusion Fest <span className="text-white">2.0</span>
+    </span>
+  </a>
+</div>
          
         </div>
 
@@ -55,7 +67,7 @@ function Navbar() {
         <div className="hidden lg:flex items-center gap-12 opacity-40">
            <div className="flex flex-col items-end">
               <span className="text-[8px] font-bold tracking-widest uppercase text-white/40 italic">Live Feed</span>
-              <span className="text-[10px] font-black text-white tabular-nums tracking-widest uppercase">SYMPOSIUM_26</span>
+              <span className="text-[10px] font-black text-white tabular-nums tracking-widest uppercase"></span>
            </div>
            <div className="h-6 w-px bg-white/10" />
            <div className="flex flex-col">
