@@ -38,13 +38,13 @@ const eventSpecificCoordinators = [
 
 export default function Poeple() {
   return (
-    <section className="bg-[#050505] text-white px-6 py-24 border-t border-white/5">
+    <section className="bg-[#050505] text-white px-4 sm:px-6 py-16 md:py-24 border-t border-white/5">
       <div className="max-w-7xl mx-auto">
-        <div className="mb-16">
+        <div className="mb-12 md:mb-16">
           <p className="text-[11px] font-black tracking-[0.5em] text-[#FFCC00] uppercase mb-4 italic">
             Administration // 2026
           </p>
-          <h2 className="text-5xl md:text-7xl font-black tracking-tighter leading-[0.88] uppercase">
+          <h2 className="text-4xl sm:text-5xl md:text-7xl font-black tracking-tighter leading-[0.92] md:leading-[0.88] uppercase">
             The People Behind<br />
             <span className="text-white/15 italic">Fusion Fest.</span>
           </h2>
@@ -52,13 +52,13 @@ export default function Poeple() {
 
       
 
-        <div className="grid gap-12 lg:grid-cols-[1.4fr_1.1fr] mb-20">
+        <div className="grid gap-8 md:gap-12 lg:grid-cols-[1.4fr_1.1fr] mb-16 md:mb-20">
           <div>
-            <div className="flex items-center gap-4 mb-8">
-              <h3 className="text-2xl font-black tracking-tighter uppercase italic">Faculty Heads</h3>
+            <div className="flex items-center gap-4 mb-6 md:mb-8">
+              <h3 className="text-xl sm:text-2xl font-black tracking-tighter uppercase italic">Faculty Heads</h3>
               <div className="h-px flex-1 bg-white/10" />
             </div>
-            <div className="grid gap-6 sm:grid-cols-2">
+            <div className="grid gap-5 sm:grid-cols-2">
               {facultyHeads.map((head, idx) => (
                 <motion.div
                   key={head.name}
@@ -75,11 +75,11 @@ export default function Poeple() {
             </div>
           </div>
 
-          <div className="bg-white/2 border border-white/5 p-8 rounded-sm">
-            <h3 className="text-xl font-black tracking-tighter uppercase italic mb-6 pb-4 border-b border-white/10">
+          <div className="bg-white/2 border border-white/5 p-5 sm:p-8 rounded-sm">
+            <h3 className="text-lg sm:text-xl font-black tracking-tighter uppercase italic mb-5 md:mb-6 pb-4 border-b border-white/10">
               Student Coordinators
             </h3>
-            <div className="space-y-4">
+            <div className="space-y-3 md:space-y-4">
               {studentCoordinators.map((student, idx) => (
                 <motion.div
                   key={student.name}
@@ -87,13 +87,13 @@ export default function Poeple() {
                   whileInView={{ opacity: 1, x: 0 }}
                   viewport={{ once: true, margin: '-10%' }}
                   transition={{ delay: idx * 0.08 }}
-                  className="grid grid-cols-[1fr_auto_1fr] items-center gap-4 py-2 border-b border-white/5 last:border-0 hover:bg-white/3 px-2"
+                  className="grid grid-cols-1 sm:grid-cols-[1fr_auto_1fr] items-center gap-2 sm:gap-4 py-2 border-b border-white/5 last:border-0 hover:bg-white/3 px-2 text-center sm:text-left"
                 >
-                  <span className="text-base font-bold tracking-widest uppercase text-white/85">{student.name}</span>
-                  <div className="text-sm text-white/40">
+                  <span className="text-sm sm:text-base font-bold tracking-widest uppercase text-white/85">{student.name}</span>
+                  <div className="text-xs sm:text-sm text-white/40">
                     {student.sem}
                   </div>
-                  <a href={`tel:${student.phone.replace(/\s+/g, '')}`} className="text-sm font-mono text-white/40 text-right">
+                  <a href={`tel:${student.phone.replace(/\s+/g, '')}`} className="text-xs sm:text-sm font-mono text-white/40 text-right">
                     {student.phone}
                   </a>
                 </motion.div>
@@ -102,9 +102,9 @@ export default function Poeple() {
           </div>
         </div>
 
-        <div className="pt-14 border-t border-white/10">
-          <div className="flex items-center gap-4 mb-10">
-            <h3 className="text-3xl font-black tracking-tighter uppercase italic">Event Coordinators</h3>
+        <div className="pt-12 md:pt-14 border-t border-white/10">
+          <div className="flex items-center gap-4 mb-8 md:mb-10">
+            <h3 className="text-2xl sm:text-3xl font-black tracking-tighter uppercase italic">Event Coordinators</h3>
             <div className="h-px flex-1 bg-white/10" />
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-px bg-white/10 border border-white/10 overflow-hidden">
@@ -115,7 +115,7 @@ export default function Poeple() {
                 whileInView={{ opacity: 1 }}
                 viewport={{ once: true, margin: '-8%' }}
                 transition={{ delay: idx * 0.04 }}
-                className="bg-[#050505] p-6 hover:bg-white/2 transition-colors"
+                className="bg-[#050505] p-5 sm:p-6 hover:bg-white/2 transition-colors"
               >
                 <p className="text-[9px] font-black text-white/20 tracking-[0.3em] uppercase mb-1 italic">Module_0{idx + 1}</p>
                 <h4 className="text-lg font-black tracking-tight uppercase text-[#FFCC00] mb-4">{item.event}</h4>

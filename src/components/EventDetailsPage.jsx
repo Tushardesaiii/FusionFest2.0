@@ -13,9 +13,9 @@ export default function EventDetailsPage() {
     return (
       <div className="min-h-screen bg-[#050505] text-white">
         <Navbar />
-        <main className="max-w-5xl mx-auto px-6 pt-40 pb-24">
+        <main className="max-w-5xl mx-auto px-4 sm:px-6 pt-32 md:pt-40 pb-20 md:pb-24">
           <p className="text-sm uppercase tracking-[0.3em] text-[#FFCC00] mb-4">Error</p>
-          <h1 className="text-4xl md:text-6xl font-black tracking-tight uppercase mb-5">Event Not Found</h1>
+          <h1 className="text-3xl sm:text-4xl md:text-6xl font-black tracking-tight uppercase mb-5">Event Not Found</h1>
           <p className="text-gray-300 mb-10">The event page you are trying to access does not exist.</p>
           <Link
             to="/"
@@ -35,7 +35,7 @@ export default function EventDetailsPage() {
     <div className="min-h-screen bg-[#050505] text-white">
       <Navbar />
 
-      <main className="max-w-7xl mx-auto px-6 pt-36 pb-24">
+      <main className="max-w-7xl mx-auto px-4 sm:px-6 pt-28 md:pt-36 pb-20 md:pb-24">
         <Link
           to="/"
           className="inline-flex items-center gap-2 text-[11px] uppercase tracking-[0.3em] text-white/60 hover:text-[#FFCC00] transition-colors"
@@ -44,13 +44,13 @@ export default function EventDetailsPage() {
           <span>Back To Timeline</span>
         </Link>
 
-        <section className="mt-10 grid gap-10 lg:grid-cols-[1.2fr_1fr] items-start">
+        <section className="mt-8 md:mt-10 grid gap-8 md:gap-10 lg:grid-cols-[1.2fr_1fr] items-start">
           <div>
             <p className="text-[11px] font-black tracking-[0.35em] text-[#FFCC00] uppercase mb-4">Day 0{event.day} // {event.tag}</p>
-            <h1 className="text-5xl md:text-7xl font-black tracking-tighter leading-[0.9] uppercase mb-6">{event.name}</h1>
-            <p className="text-base md:text-lg text-gray-300 leading-relaxed max-w-3xl mb-8">{event.details}</p>
+            <h1 className="text-4xl sm:text-5xl md:text-7xl font-black tracking-tighter leading-[0.92] md:leading-[0.9] uppercase mb-5 md:mb-6">{event.name}</h1>
+            <p className="text-sm sm:text-base md:text-lg text-gray-300 leading-relaxed max-w-3xl mb-6 md:mb-8">{event.details}</p>
 
-            <div className="grid sm:grid-cols-2 gap-4 mb-8">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 md:gap-4 mb-6 md:mb-8">
               <div className="rounded-2xl border border-white/10 bg-white/2 p-5">
                 <p className="text-[10px] uppercase tracking-[0.3em] text-gray-500 mb-2">Time</p>
                 <p className="text-lg font-black">{event.start} to {event.end}</p>
@@ -84,7 +84,7 @@ export default function EventDetailsPage() {
             animate={{ opacity: 1, y: 0 }}
             className="rounded-3xl border border-white/10 bg-white/2 overflow-hidden"
           >
-            <div className="aspect-4/5">
+            <div className="aspect-4/3 md:aspect-4/5">
               <img src={event.img} alt={event.name} className="w-full h-full object-cover" />
             </div>
             <div className="p-6 border-t border-white/10">
@@ -112,8 +112,8 @@ export default function EventDetailsPage() {
         </section>
 
         <section className="mt-20 border-t border-white/10 pt-12">
-          <h2 className="text-2xl md:text-4xl font-black tracking-tight uppercase mb-8">Explore Other Events</h2>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+          <h2 className="text-xl sm:text-2xl md:text-4xl font-black tracking-tight uppercase mb-6 md:mb-8">Explore Other Events</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 md:gap-4">
             {otherEvents.map((item) => (
               <Link
                 key={item.slug}

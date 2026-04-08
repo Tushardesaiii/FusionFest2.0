@@ -1,13 +1,13 @@
 function FooterSection() {
   return (
-    <footer id="register" className="border-t border-white/10 bg-[#050505] px-6 py-14">
+    <footer id="register" className="border-t border-white/10 bg-[#050505] px-4 sm:px-6 py-12 md:py-14">
       <div className="mx-auto w-full max-w-7xl">
-        <div className="grid gap-12 lg:grid-cols-[1.4fr_0.8fr_0.8fr] lg:items-start">
+        <div className="grid gap-10 md:gap-12 lg:grid-cols-[1.4fr_0.8fr_0.8fr] lg:items-start">
           <div>
             <p className="text-[11px] font-black tracking-[0.4em] text-[#FFCC00] uppercase mb-4 italic">
               Fusion Fest 2.0
             </p>
-            <h4 className="text-2xl md:text-3xl font-black tracking-tighter leading-[0.9] uppercase max-w-2xl">
+            <h4 className="text-xl sm:text-2xl md:text-3xl font-black tracking-tighter leading-[0.95] md:leading-[0.9] uppercase max-w-2xl">
               Build, compete, and celebrate the next wave of ideas.
             </h4>
             <p className="mt-5 max-w-2xl text-sm md:text-base leading-relaxed text-gray-300">
@@ -42,7 +42,7 @@ function FooterSection() {
           </div>
         </div>
 
-        <div className="mt-10 flex flex-col gap-4 border-t border-white/10 pt-6 md:flex-row md:items-center md:justify-between">
+        <div className="mt-8 md:mt-10 flex flex-col gap-4 border-t border-white/10 pt-6 md:flex-row md:items-center md:justify-between">
           <p className="text-[10px] uppercase tracking-[0.3em] text-white/35">
             Fusion Fest 2K26 // Beyond Tech - Fusion of ideas & fun
           </p>

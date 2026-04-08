@@ -64,11 +64,11 @@ export default function FAQSection() {
   const [openIndex, setOpenIndex] = useState(0);
 
   return (
-    <section id="faq-section" className="bg-[#050505] text-white px-6 py-24 border-t border-white/5 scroll-mt-28">
+    <section id="faq-section" className="bg-[#050505] text-white px-4 sm:px-6 py-20 md:py-24 border-t border-white/5 scroll-mt-28">
       <div className="max-w-5xl mx-auto">
-        <div className="mb-12">
+        <div className="mb-10 md:mb-12">
           <p className="text-[11px] font-black tracking-[0.4em] text-[#FFCC00] uppercase mb-3 italic">Info Desk</p>
-          <h2 className="text-4xl md:text-6xl font-black tracking-tighter leading-[0.9] uppercase">
+          <h2 className="text-3xl sm:text-4xl md:text-6xl font-black tracking-tighter leading-[0.92] md:leading-[0.9] uppercase">
             Frequently Asked<br />
             <span className="text-white/20 italic">Questions.</span>
           </h2>
