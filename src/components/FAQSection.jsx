@@ -64,7 +64,7 @@ export default function FAQSection() {
   const [openIndex, setOpenIndex] = useState(0);
 
   return (
-    <section className="bg-[#050505] text-white px-6 py-24 border-t border-white/5">
+    <section id="faq-section" className="bg-[#050505] text-white px-6 py-24 border-t border-white/5 scroll-mt-28">
       <div className="max-w-5xl mx-auto">
         <div className="mb-12">
           <p className="text-[11px] font-black tracking-[0.4em] text-[#FFCC00] uppercase mb-3 italic">Info Desk</p>

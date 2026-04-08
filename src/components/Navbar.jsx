@@ -43,11 +43,11 @@ function Navbar() {
         duration: 0.35, // 🔥 faster = smoother feel
         ease: [0.4, 0, 0.2, 1], // material easing
       }}
-      className="fixed top-0 left-0 right-0 z-[100] px-6 md:px-12 py-4 pointer-events-none"
+      className="fixed top-0 left-0 right-0 z-100 px-6 md:px-12 py-4 pointer-events-none"
     >
       <nav
         className={`
-          relative mx-auto w-full max-w-[1400px]
+          relative mx-auto w-full max-w-350
           flex items-center justify-between px-8 py-4
           transition-all duration-500 ease-out
           pointer-events-auto
@@ -102,7 +102,7 @@ function Navbar() {
         {/* RIGHT */}
         <div className="flex items-center gap-4">
           <a
-            href="#register"
+            href="#events-section"
             className="group relative overflow-hidden px-6 py-2.5 bg-white rounded-md active:scale-95 transition"
           >
             <div className="absolute inset-0 bg-[#FFCC00] -translate-y-full group-hover:translate-y-0 transition-transform duration-300" />

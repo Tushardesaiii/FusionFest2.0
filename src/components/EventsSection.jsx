@@ -1,21 +1,12 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import PrizesRewardsSection from './PrizesRewardsSection';
-
-const events = [
-  { name: 'CODESTORM', start: '09:00', end: '13:30', tag: 'HACKATHON', day: 1, img: 'https://images.pexels.com/photos/34804017/pexels-photo-34804017.jpeg' },
-  { name: 'VOLTAGE VOYAGE', start: '09:00', end: '13:30', tag: 'ENGINEERING', day: 1, img: 'https://images.pexels.com/photos/2582937/pexels-photo-2582937.jpeg' },
-  { name: 'ROBO RUMBLE', start: '14:00', end: '16:00', tag: 'ROBOTICS', day: 1, img: 'https://images.pexels.com/photos/30530412/pexels-photo-30530412.jpeg' },
-  { name: 'DEBATE DUEL', start: '14:00', end: '16:00', tag: 'SPEECH', day: 1, img: 'https://images.pexels.com/photos/8199159/pexels-photo-8199159.jpeg' },
-  { name: 'SPOTLIGHT STAGE', start: '17:00', end: 'LATE', tag: 'CULTURAL', day: 1, img: 'https://images.pexels.com/photos/5389619/pexels-photo-5389619.jpeg' },
-  { name: 'AI NEXUS', start: '09:00', end: '13:00', tag: 'AI-ML', day: 2, img: 'https://images.pexels.com/photos/30530412/pexels-photo-30530412.jpeg' },
-  { name: 'PIXEL PERFECT', start: '10:00', end: '12:00', tag: 'UI/UX', day: 2, img: 'https://images.pexels.com/photos/70911/pexels-photo-70911.jpeg' },
-  { name: 'IDEA FORGE', start: '14:00', end: '16:00', tag: 'IDEATHON', day: 2, img: 'https://images.pexels.com/photos/11605252/pexels-photo-11605252.jpeg' },
-];
+import { Link } from 'react-router-dom';
+import { eventsData } from '../data/eventsData';
 
 export default function EventsSection() {
   return (
-    <section className="bg-[#050505] text-white py-40 px-6 font-sans">
+    <section id="events-section" className="bg-[#050505] text-white py-40 px-6 font-sans scroll-mt-28">
       <div className="max-w-7xl mx-auto">
         
         {/* --- 1. ARCHITECTURAL HEADER --- */}
@@ -35,7 +26,7 @@ export default function EventsSection() {
           {/* THE MASTER VERTICAL SPINE */}
           <div className="absolute left-6 md:left-[25%] top-0 w-px h-full bg-linear-to-b from-[#FFCC00] via-white/10 to-transparent" />
 
-          {events.map((event, idx) => (
+          {eventsData.map((event, idx) => (
             <motion.div 
               key={idx}
               initial={{ opacity: 0, x: -20 }}
@@ -65,7 +56,7 @@ export default function EventsSection() {
                    <div className="w-1 h-1 rounded-full bg-[#FFCC00]" />
                 </div>
                 {/* Connecting Horizontal Circuit Line */}
-                <div className="h-[1px] w-8 md:w-24 bg-gradient-to-r from-[#FFCC00] to-transparent absolute top-[7.5px] left-full" />
+                <div className="h-px w-8 md:w-24 bg-linear-to-r from-[#FFCC00] to-transparent absolute top-[7.5px] left-full" />
               </div>
 
               {/* RIGHT: THE 9:16 VISUAL & INFO */}
@@ -73,8 +64,8 @@ export default function EventsSection() {
                 <div className="flex flex-col lg:flex-row gap-12 items-center lg:items-start">
                   
                   {/* Image Card (Strictly Professional 9:16) */}
-                  <div className="relative w-[280px] md:w-[340px] shrink-0 group">
-                    <div className="relative aspect-[9/16] rounded-[20px] overflow-hidden">
+                  <div className="relative w-70 md:w-85 shrink-0 group">
+                    <div className="relative aspect-9/16 rounded-[20px] overflow-hidden">
                       <img 
                         src={event.img} 
                         className="w-full h-full object-cover  " 
@@ -101,18 +92,15 @@ export default function EventsSection() {
                          <p className="text-[9px] font-black text-gray-600 tracking-[0.4em] uppercase mb-2">Duration</p>
                          <p className="text-sm font-bold tracking-widest">{event.end === 'LATE' ? 'Open Session' : '4.5 Hours'}</p>
                        </div>
-                       <div>
-                         <p className="text-[9px] font-black text-gray-600 tracking-[0.4em] uppercase mb-2">Access</p>
-                         <p className="text-sm font-bold tracking-widest underline decoration-[#FFCC00]">Tier 01 // All</p>
-                       </div>
+                       
                     </div>
 
-                    <button className="mt-12 flex items-center gap-6 group">
+                      <Link to={`/events/${event.slug}`} className="mt-12 inline-flex items-center gap-6 group">
                        <div className="w-12 h-12 rounded-full border border-white/20 flex items-center justify-center group-hover:bg-[#FFCC00] group-hover:border-[#FFCC00] transition-all">
                           <span className="text-xl text-white group-hover:text-black">→</span>
                        </div>
                        <span className="text-[10px] font-black tracking-[0.4em] uppercase opacity-40 group-hover:opacity-100 transition-opacity underline decoration-white/20 underline-offset-8">Read Protocol</span>
-                    </button>
+                      </Link>
                   </div>
 
                 </div>
@@ -141,7 +129,7 @@ export default function EventsSection() {
       
       {/* ADDED SUB-BENEFIT FOR GTU STUDENTS */}
       <div className="mt-10 flex items-center gap-4">
-        <div className="h-[1px] w-12 bg-[#FFCC00]" />
+        <div className="h-px w-12 bg-[#FFCC00]" />
         <p className="text-[10px] font-black text-white/40 tracking-[0.3em] uppercase italic">
           Powered by Graduate School of Engineering & Technology
         </p>
@@ -152,7 +140,7 @@ export default function EventsSection() {
     <div className="grid sm:grid-cols-2 gap-4">
       
       {/* SKILL VALIDATION */}
-      <div className="border border-white/5 bg-white/[0.02] backdrop-blur-md rounded-xl p-6 transition-all hover:border-[#FFCC00]/30 group">
+      <div className="border border-white/5 bg-white/2 backdrop-blur-md rounded-xl p-6 transition-all hover:border-[#FFCC00]/30 group">
         <p className="text-[10px] font-black tracking-[0.3em] text-[#FFCC00] uppercase mb-3 opacity-60 group-hover:opacity-100 transition-opacity italic">
           01 // Skill Build
         </p>
@@ -162,7 +150,7 @@ export default function EventsSection() {
       </div>
 
       {/* PORTFOLIO GROWTH */}
-      <div className="border border-white/5 bg-white/[0.02] backdrop-blur-md rounded-xl p-6 transition-all hover:border-[#FF6F37]/30 group">
+      <div className="border border-white/5 bg-white/2 backdrop-blur-md rounded-xl p-6 transition-all hover:border-[#FF6F37]/30 group">
         <p className="text-[10px] font-black tracking-[0.3em] text-[#FFCC00] uppercase mb-3 opacity-60 group-hover:opacity-100 transition-opacity italic">
           02 // Portfolio
         </p>
@@ -172,7 +160,7 @@ export default function EventsSection() {
       </div>
 
       {/* EXPERT MENTORSHIP */}
-      <div className="border border-white/5 bg-white/[0.02] backdrop-blur-md rounded-xl p-6 transition-all hover:border-[#FF6F37]/30 group">
+      <div className="border border-white/5 bg-white/2 backdrop-blur-md rounded-xl p-6 transition-all hover:border-[#FF6F37]/30 group">
         <p className="text-[10px] font-black tracking-[0.3em] text-[#FFCC00] uppercase mb-3 opacity-60 group-hover:opacity-100 transition-opacity italic">
           03 // Mentorship
         </p>
@@ -182,7 +170,7 @@ export default function EventsSection() {
       </div>
 
       {/* THE NETWORK */}
-      <div className="border border-white/5 bg-white/[0.02] backdrop-blur-md rounded-xl p-6 transition-all hover:border-[#FF6F37]/30 group">
+      <div className="border border-white/5 bg-white/2 backdrop-blur-md rounded-xl p-6 transition-all hover:border-[#FF6F37]/30 group">
         <p className="text-[10px] font-black tracking-[0.3em] text-[#FFCC00] uppercase mb-3 opacity-60 group-hover:opacity-100 transition-opacity italic">
           04 // Connections
         </p>
