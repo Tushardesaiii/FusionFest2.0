@@ -13,7 +13,7 @@ export const eventsData = [
     eligibility: 'Open for all registered students',
     venue: 'GTU-SET',
     joinLink: 'https://forms.gle/fusionfest-codestorm',
-    sopLink: 'https://drive.google.com/file/d/REPLACE-WITH-CODESTORM-SOP/view?usp=sharing',
+    sopLink: 'https://drive.google.com/file/d/1z1kLc7UBg4EW8-c6IOPkIDoW_dssgroF/view?usp=sharing',
     rules: [
       'Bring your own laptop and charger.',
       'Internet use is allowed unless restricted by challenge mode.',
@@ -34,7 +34,7 @@ export const eventsData = [
     eligibility: 'Electrical and interdisciplinary teams',
     venue: 'Electronics Workshop Hall',
     joinLink: 'https://forms.gle/fusionfest-voltage-voyage',
-    sopLink: 'https://drive.google.com/file/d/REPLACE-WITH-VOLTAGE-VOYAGE-SOP/view?usp=sharing',
+    sopLink: 'https://drive.google.com/file/d/1n88eAT5D7lVYtXJMiJqVHJVbhd8v9Hxh/view?usp=drive_link',
     rules: [
       'Safety protocol briefing is mandatory.',
       'Use only provided core components for scoring tasks.',
@@ -55,7 +55,7 @@ export const eventsData = [
     eligibility: 'Open for robotics teams',
     venue: 'Central Arena',
     joinLink: 'https://forms.gle/fusionfest-robo-rumble',
-    sopLink: 'https://drive.google.com/file/d/REPLACE-WITH-ROBO-RUMBLE-SOP/view?usp=sharing',
+    sopLink: 'https://docs.google.com/document/d/1SnCf4npa_-vX6w-JG-CyxOOXVqN8WFvP/edit?usp=drive_link&ouid=115565421018406569944&rtpof=true&sd=true',
     rules: [
       'Robot dimensions must match event guidelines.',
       'Only approved power systems are allowed.',
@@ -118,7 +118,7 @@ export const eventsData = [
     eligibility: 'AI, CSE, and open tech teams',
     venue: 'AI Lab Complex',
     joinLink: 'https://forms.gle/fusionfest-ai-nexus',
-    sopLink: 'https://drive.google.com/file/d/REPLACE-WITH-AI-NEXUS-SOP/view?usp=sharing',
+    sopLink: 'https://drive.google.com/file/d/1xkUtty3_sXsRUuWtNrYfFXtNI71oM_e7/view?usp=drive_link',
     rules: [
       'Use only permitted datasets in final round.',
       'All code must be submitted before presentation.',
@@ -139,7 +139,7 @@ export const eventsData = [
     eligibility: 'Open for designers and developers',
     venue: 'Design Studio',
     joinLink: 'https://forms.gle/fusionfest-pixel-perfect',
-    sopLink: 'https://drive.google.com/file/d/REPLACE-WITH-PIXEL-PERFECT-SOP/view?usp=sharing',
+    sopLink: 'https://drive.google.com/file/d/1STUL6QUxEdw-FyJUTuUZkliBNO5DzHDs/view?usp=drive_link',
     rules: [
       'Present both concept and flow rationale.',
       'Original work only; no template kits for scoring rounds.',
@@ -160,7 +160,7 @@ export const eventsData = [
     eligibility: 'Open innovation track',
     venue: 'Auditorium 2',
     joinLink: 'https://forms.gle/fusionfest-idea-forge',
-    sopLink: 'https://drive.google.com/file/d/REPLACE-WITH-IDEA-FORGE-SOP/view?usp=sharing',
+    sopLink: 'https://docs.google.com/document/d/1NHcbl1agrpLvTCJO7xzaKu49eH26R3fi/edit?usp=drive_link&ouid=115565421018406569944&rtpof=true&sd=true',
     rules: [
       'Pitch deck must be concise and time-bound.',
       'Judging includes feasibility and clarity.',

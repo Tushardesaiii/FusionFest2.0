@@ -26,14 +26,14 @@ const studentCoordinators = [
 ];
 
 const eventSpecificCoordinators = [
-  { event: 'Codestorm', lead1: 'Nikunj (4-comp)', lead2: 'Vivek Yadav (6-comp)', phone: '+91 XXXXX XXXXX' },
+  { event: 'Codestorm', lead1: 'Vivek', lead2: 'Nikunj', phone: '+91 XXXXX XXXXX' },
   { event: 'Voltage Voyage', lead1: 'Darsh', lead2: 'Krupesh', phone: '+91 XXXXX XXXXX' },
-  { event: 'Robo Rumble', lead1: 'Zeel (4-comp)', lead2: 'Sarva', phone: '+91 XXXXX XXXXX' },
-  { event: 'Debate Duel', lead1: 'Ishan (6-comp)', lead2: 'Khushi (4-comp)', phone: '+91 XXXXX XXXXX' },
-  { event: 'AI Nexus', lead1: 'Shlok (6-comp)', lead2: 'Vatsal (4-comp)', phone: '+91 XXXXX XXXXX' },
+  { event: 'Robo Rumble', lead1: 'Zeel ', lead2: 'Sarva', phone: '+91 XXXXX XXXXX' },
+  { event: 'Debate Duel', lead1: 'Ishan ', lead2: 'Khushi', phone: '+91 XXXXX XXXXX' },
+  { event: 'AI Nexus', lead1: 'Shlok ', lead2: 'Vatsal', phone: '+91 XXXXX XXXXX' },
   { event: 'Pixel Perfect', lead1: 'Raj', lead2: 'Mahek', phone: '+91 XXXXX XXXXX' },
   { event: 'Spaghetti Structure', lead1: 'Nisarg', lead2: 'Manish', phone: '+91 XXXXX XXXXX' },
-  { event: 'Idea Forge', lead1: 'Diya', lead2: 'Ayush (4-comp)', phone: '+91 XXXXX XXXXX' },
+  { event: 'Idea Forge', lead1: 'Diya', lead2: 'Ayush', phone: '+91 XXXXX XXXXX' },
 ];
 
 export default function Poeple() {

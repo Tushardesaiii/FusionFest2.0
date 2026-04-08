@@ -120,9 +120,7 @@ export default function EventsSection() {
     
     {/* --- LEFT: THE MISSION --- */}
     <div>
-      <p className="text-[11px] font-[1000] tracking-[0.4em] text-[#FFCC00] uppercase mb-6 italic">
-        Symposium Intelligence
-      </p>
+      
       <h3 className="text-3xl sm:text-5xl md:text-7xl font-[1000] tracking-tighter leading-[0.9] md:leading-[0.85] uppercase mb-6 md:mb-8">
         Why Join<br />
         <span className="text-white/20 italic">Fusion Fest 2.0?</span>
@@ -135,9 +133,7 @@ export default function EventsSection() {
       {/* ADDED SUB-BENEFIT FOR GTU STUDENTS */}
       <div className="mt-10 flex items-center gap-4">
         <div className="h-px w-12 bg-[#FFCC00]" />
-        <p className="text-[10px] font-black text-white/40 tracking-[0.3em] uppercase italic">
-          Powered by Graduate School of Engineering & Technology
-        </p>
+      
       </div>
     </div>
 
