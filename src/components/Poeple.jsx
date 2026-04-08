@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 
 const eventMeta = [
@@ -37,6 +37,8 @@ const eventSpecificCoordinators = [
 ];
 
 export default function Poeple() {
+  const [showAllMobileCoordinators, setShowAllMobileCoordinators] = useState(false);
+
   return (
     <section className="bg-[#050505] text-white px-4 sm:px-6 py-16 md:py-24 border-t border-white/5">
       <div className="max-w-7xl mx-auto">
@@ -115,7 +117,7 @@ export default function Poeple() {
                 whileInView={{ opacity: 1 }}
                 viewport={{ once: true, margin: '-8%' }}
                 transition={{ delay: idx * 0.04 }}
-                className="bg-[#050505] p-5 sm:p-6 hover:bg-white/2 transition-colors"
+                className={`bg-[#050505] p-5 sm:p-6 hover:bg-white/2 transition-colors ${idx > 3 && !showAllMobileCoordinators ? 'hidden sm:block' : ''}`}
               >
                 <p className="text-[9px] font-black text-white/20 tracking-[0.3em] uppercase mb-1 italic">Module_0{idx + 1}</p>
                 <h4 className="text-lg font-black tracking-tight uppercase text-[#FFCC00] mb-4">{item.event}</h4>
@@ -129,6 +131,14 @@ export default function Poeple() {
               </motion.div>
             ))}
           </div>
+
+          <button
+            type="button"
+            onClick={() => setShowAllMobileCoordinators((prev) => !prev)}
+            className="sm:hidden mt-4 text-[11px] font-black uppercase tracking-[0.3em] text-[#FFCC00]"
+          >
+            {showAllMobileCoordinators ? 'Show Less' : 'Show More'}
+          </button>
         </div>
       </div>
     </section>

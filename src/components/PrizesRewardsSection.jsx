@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 
 const rewards = [
@@ -21,6 +21,8 @@ const rewards = [
 ];
 
 export default function PrizesRewardsSection() {
+  const [showAllMobileRewards, setShowAllMobileRewards] = useState(false);
+
   return (
     <section className="mt-24 border-t border-white/10 pt-16">
       <div className="mb-12 flex flex-col md:flex-row md:items-end md:justify-between gap-6">
@@ -39,7 +41,7 @@ export default function PrizesRewardsSection() {
         </div>
       </div>
 
-      <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-4">
+      <div className="grid gap-3 md:gap-4 sm:grid-cols-2 xl:grid-cols-4">
         {rewards.map((reward, idx) => (
           <motion.article
             key={reward.title}
@@ -47,7 +49,7 @@ export default function PrizesRewardsSection() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: '-8%' }}
             transition={{ duration: 0.35, delay: idx * 0.08 }}
-            className="rounded-2xl border border-white/10 bg-white/3 p-6"
+            className={`rounded-2xl border border-white/10 bg-white/3 p-5 md:p-6 ${idx > 1 && !showAllMobileRewards ? 'hidden sm:block' : ''}`}
           >
             <p className="text-[10px] font-black tracking-[0.3em] text-gray-500 uppercase mb-5 italic italic">Benefit_0{idx + 1}</p>
             <h4 className="text-xl font-black tracking-tight uppercase mb-2 text-white">{reward.title}</h4>
@@ -56,6 +58,14 @@ export default function PrizesRewardsSection() {
           </motion.article>
         ))}
       </div>
+
+      <button
+        type="button"
+        onClick={() => setShowAllMobileRewards((prev) => !prev)}
+        className="sm:hidden mt-4 text-[11px] font-black uppercase tracking-[0.3em] text-[#FFCC00]"
+      >
+        {showAllMobileRewards ? 'Show Less' : 'Show More'}
+      </button>
     </section>
   );
 }

@@ -1,10 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import PrizesRewardsSection from './PrizesRewardsSection';
 import { Link } from 'react-router-dom';
 import { eventsData } from '../data/eventsData';
 
 export default function EventsSection() {
+  const [showAllMobileBenefits, setShowAllMobileBenefits] = useState(false);
+
   return (
     <section id="events-section" className="bg-[#050505] text-white py-24 md:py-40 px-4 sm:px-6 font-sans scroll-mt-28">
       <div className="max-w-7xl mx-auto">
@@ -163,7 +165,7 @@ export default function EventsSection() {
       </div>
 
       {/* EXPERT MENTORSHIP */}
-      <div className="border border-white/5 bg-white/2 backdrop-blur-md rounded-xl p-5 md:p-6 transition-all hover:border-[#FF6F37]/30 group">
+      <div className={`border border-white/5 bg-white/2 backdrop-blur-md rounded-xl p-5 md:p-6 transition-all hover:border-[#FF6F37]/30 group ${showAllMobileBenefits ? '' : 'hidden sm:block'}`}>
         <p className="text-[10px] font-black tracking-[0.3em] text-[#FFCC00] uppercase mb-3 opacity-60 group-hover:opacity-100 transition-opacity italic">
           03 // Mentorship
         </p>
@@ -173,7 +175,7 @@ export default function EventsSection() {
       </div>
 
       {/* THE NETWORK */}
-      <div className="border border-white/5 bg-white/2 backdrop-blur-md rounded-xl p-5 md:p-6 transition-all hover:border-[#FF6F37]/30 group">
+      <div className={`border border-white/5 bg-white/2 backdrop-blur-md rounded-xl p-5 md:p-6 transition-all hover:border-[#FF6F37]/30 group ${showAllMobileBenefits ? '' : 'hidden sm:block'}`}>
         <p className="text-[10px] font-black tracking-[0.3em] text-[#FFCC00] uppercase mb-3 opacity-60 group-hover:opacity-100 transition-opacity italic">
           04 // Connections
         </p>
@@ -181,6 +183,14 @@ export default function EventsSection() {
           Join a community of the nerdiest, most driven engineers in the state. Find your next co-founder or teammate.
         </p>
       </div>
+
+      <button
+        type="button"
+        onClick={() => setShowAllMobileBenefits((prev) => !prev)}
+        className="sm:hidden mt-2 text-[11px] font-black uppercase tracking-[0.3em] text-[#FFCC00]"
+      >
+        {showAllMobileBenefits ? 'Show Less' : 'Show More'}
+      </button>
 
     </div>
   </div>
