@@ -51,7 +51,7 @@ export default function PrizesRewardsSection() {
             transition={{ duration: 0.35, delay: idx * 0.08 }}
             className={`rounded-2xl border border-white/10 bg-white/3 p-5 md:p-6 ${idx > 1 && !showAllMobileRewards ? 'hidden sm:block' : ''}`}
           >
-            <p className="text-[10px] font-black tracking-[0.3em] text-gray-500 uppercase mb-5 italic italic">Benefit_0{idx + 1}</p>
+            <p className="text-[10px] font-black tracking-[0.3em] text-gray-500 uppercase mb-5 italic">Benefit_0{idx + 1}</p>
             <h4 className="text-xl font-black tracking-tight uppercase mb-2 text-white">{reward.title}</h4>
             <p className="text-2xl font-black text-[#FFCC00] tracking-tight mb-4 leading-none">{reward.amount}</p>
             <p className="text-sm text-white/80 leading-relaxed font-medium">{reward.perks}</p>

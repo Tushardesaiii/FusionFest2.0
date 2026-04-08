@@ -67,7 +67,7 @@ export default function EventsSection() {
                   
                   {/* Image Card (Strictly Professional 9:16) */}
                   <div className="relative w-full max-w-full md:w-85 shrink-0 group">
-                    <div className="relative aspect-[4/3] md:aspect-9/16 rounded-[20px] overflow-hidden">
+                    <div className="relative aspect-video md:aspect-9/16 rounded-[20px] overflow-hidden">
                       <img 
                         src={event.img} 
                         className="w-full h-full object-cover  " 
