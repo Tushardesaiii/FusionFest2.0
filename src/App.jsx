@@ -1,6 +1,8 @@
 import Navbar from './components/Navbar'
 import HeroSection from './components/HeroSection'
 import EventsSection from './components/EventsSection'
+import Poeple from './components/Poeple'
+import FAQSection from './components/FAQSection'
 import FooterSection from './components/FooterSection'
 
 function App() {
@@ -9,6 +11,8 @@ function App() {
       <Navbar />
       <HeroSection />
       <EventsSection />
+      <Poeple />
+      <FAQSection />
       <FooterSection />
     </div>
   )

@@ -63,7 +63,7 @@ function HeroSection() {
             initial={{ opacity: 0, x: 20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ delay: 0.2, duration: 0.8 }}
-            className="text-[clamp(4.5rem,16vw,12rem)] font-black leading-[0.7] tracking-[-0.07em] text-[#FFCC00] uppercase italic mt-[-1vw]"
+            className="text-[clamp(4.5rem,16vw,12rem)] font-black border-rounded bg-white border-white leading-[0.7] tracking-[-0.07em] text-[#FFCC00] uppercase italic mt-[-1vw]"
           >
             FEST 2.0
           </motion.h1>
@@ -75,7 +75,7 @@ function HeroSection() {
           className="mt-12 group flex items-center gap-6"
         >
           <div className="h-px w-8 bg-white/10" />
-          <p className="text-[10px] font-black text-white tracking-[0.5em] uppercase italic group-hover:text-[#FFCC00] transition-colors">
+          <p className="text-[15px] font-black text-white tracking-[0.5em] uppercase italic group-hover:text-[#FFCC00] transition-colors">
             Are you nerdy enough to participate?
           </p>
           <div className="h-px w-8 bg-white/10" />

@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import PrizesRewardsSection from './PrizesRewardsSection';
 
 const events = [
   { name: 'CODESTORM', start: '09:00', end: '13:30', tag: 'HACKATHON', day: 1, img: 'https://images.pexels.com/photos/34804017/pexels-photo-34804017.jpeg' },
@@ -121,7 +122,80 @@ export default function EventsSection() {
           ))}
         </div>
 
-       
+       <div className="mt-24 border-t border-white/5 pt-20">
+  <div className="grid gap-16 lg:grid-cols-[1.2fr_1fr] items-start">
+    
+    {/* --- LEFT: THE MISSION --- */}
+    <div>
+      <p className="text-[11px] font-[1000] tracking-[0.4em] text-[#FFCC00] uppercase mb-6 italic">
+        Symposium Intelligence
+      </p>
+      <h3 className="text-5xl md:text-7xl font-[1000] tracking-tighter leading-[0.85] uppercase mb-8">
+        Why Join<br />
+        <span className="text-white/20 italic">Fusion Fest 2.0?</span>
+      </h3>
+      <p className="text-base md:text-lg text-gray-400 leading-relaxed max-w-xl font-medium">
+        Fusion Fest 2.0 at GTU-SET is more than just a series of events; it's a high-voltage environment designed to test your technical limits. 
+        From intensive coding sprints to autonomous robotics and structural design challenges, we provide the platform where theoretical engineering meets industrial-grade execution.
+      </p>
+      
+      {/* ADDED SUB-BENEFIT FOR GTU STUDENTS */}
+      <div className="mt-10 flex items-center gap-4">
+        <div className="h-[1px] w-12 bg-[#FFCC00]" />
+        <p className="text-[10px] font-black text-white/40 tracking-[0.3em] uppercase italic">
+          Powered by Graduate School of Engineering & Technology
+        </p>
+      </div>
+    </div>
+
+    {/* --- RIGHT: THE STUDENT ROI (Return on Investment) --- */}
+    <div className="grid sm:grid-cols-2 gap-4">
+      
+      {/* SKILL VALIDATION */}
+      <div className="border border-white/5 bg-white/[0.02] backdrop-blur-md rounded-xl p-6 transition-all hover:border-[#FFCC00]/30 group">
+        <p className="text-[10px] font-black tracking-[0.3em] text-[#FFCC00] uppercase mb-3 opacity-60 group-hover:opacity-100 transition-opacity italic">
+          01 // Skill Build
+        </p>
+        <p className="text-sm text-gray-400 group-hover:text-white transition-colors leading-relaxed">
+          Move beyond the classroom. Solve real-world problem statements curated by academic and industry veterans.
+        </p>
+      </div>
+
+      {/* PORTFOLIO GROWTH */}
+      <div className="border border-white/5 bg-white/[0.02] backdrop-blur-md rounded-xl p-6 transition-all hover:border-[#FF6F37]/30 group">
+        <p className="text-[10px] font-black tracking-[0.3em] text-[#FFCC00] uppercase mb-3 opacity-60 group-hover:opacity-100 transition-opacity italic">
+          02 // Portfolio
+        </p>
+        <p className="text-sm text-gray-400 group-hover:text-white transition-colors leading-relaxed">
+          Add "GTU-SET Fusion Fest Winner" to your CV. Our certificates carry the weight of Gujarat’s premier technical university.
+        </p>
+      </div>
+
+      {/* EXPERT MENTORSHIP */}
+      <div className="border border-white/5 bg-white/[0.02] backdrop-blur-md rounded-xl p-6 transition-all hover:border-[#FF6F37]/30 group">
+        <p className="text-[10px] font-black tracking-[0.3em] text-[#FFCC00] uppercase mb-3 opacity-60 group-hover:opacity-100 transition-opacity italic">
+          03 // Mentorship
+        </p>
+        <p className="text-sm text-gray-400 group-hover:text-white transition-colors leading-relaxed">
+          Direct interaction with professors and industry experts to refine your logic, code, and mechanical designs.
+        </p>
+      </div>
+
+      {/* THE NETWORK */}
+      <div className="border border-white/5 bg-white/[0.02] backdrop-blur-md rounded-xl p-6 transition-all hover:border-[#FF6F37]/30 group">
+        <p className="text-[10px] font-black tracking-[0.3em] text-[#FFCC00] uppercase mb-3 opacity-60 group-hover:opacity-100 transition-opacity italic">
+          04 // Connections
+        </p>
+        <p className="text-sm text-gray-400 group-hover:text-white transition-colors leading-relaxed">
+          Join a community of the nerdiest, most driven engineers in the state. Find your next co-founder or teammate.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+        <PrizesRewardsSection />
 
       </div>
     </section>
