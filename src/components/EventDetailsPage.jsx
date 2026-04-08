@@ -45,7 +45,7 @@ export default function EventDetailsPage() {
     <div className="min-h-screen bg-[#050505] text-white">
       <Navbar />
 
-      <main className="max-w-7xl mx-auto px-4 sm:px-6 pt-28 md:pt-36 pb-20 md:pb-24">
+      <main className="max-w-7xl mx-auto px-4 sm:px-6 pt-28 md:pt-3o pb-20 md:pb-24">
         <Link
           to="/"
           onClick={handleBackToTimeline}
@@ -105,7 +105,7 @@ export default function EventDetailsPage() {
                   href={event.sopLink}
                   target="_blank"
                   rel="noreferrer"
-                  className="inline-flex w-full items-center justify-center rounded-full border border-white/15 px-6 py-3 text-xs font-black uppercase tracking-[0.25em] text-white hover:bg-white hover:text-black transition-colors"
+                  className="inline-flex w-full items-center justify-center rounded-full border border-white/15 px-6 py-3 text-xs font-black uppercase tracking-[0.25em] text-black bg-white hover:bg-black hover:text-white transition-colors"
                 >
                   Read Event SOP
                 </a>

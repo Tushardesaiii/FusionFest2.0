@@ -18,22 +18,22 @@ const facultyHeads = [
 ];
 
 const studentCoordinators = [
-     { name: 'Tushar Desai', phone: '+91 XXXXX XXXXX', sem: '6-CE' },
-  { name: 'Bhavya Shah', phone: '+91 XXXXX XXXXX', sem: '6-CE' },
-   { name: 'Kavan Bhavsar', phone: '+91 XXXXX XXXXX', sem: '4-CE' },
-  { name: 'Harshil Maru', phone: '+91 XXXXX XXXXX', sem: '4-CE' },
+     { name: 'Tushar Desai', phone: '+91 88496 56703', sem: '6-CE' },
+  { name: 'Bhavya Shah', phone: '+91 94094 07085', sem: '6-CE' },
+   { name: 'Kavan Bhavsar', phone: '+91 94848 79337', sem: '4-CE' },
+  { name: 'Harshil Maru', phone: '+91 93137 30627', sem: '4-CE' },
  
 ];
 
 const eventSpecificCoordinators = [
-  { event: 'Codestorm', lead1: 'Vivek', lead2: 'Nikunj', phone: '+91 XXXXX XXXXX' },
-  { event: 'Voltage Voyage', lead1: 'Darsh', lead2: 'Krupesh', phone: '+91 XXXXX XXXXX' },
+  { event: 'Codestorm', lead1: 'Vivek', lead2: 'Nikunj', phone: '8320607439' },
+  { event: 'Voltage Voyage', lead1: 'Darsh', lead2: 'Krupesh', phone: '6353597697' },
   { event: 'Robo Rumble', lead1: 'Zeel ', lead2: 'Sarva', phone: '+91 XXXXX XXXXX' },
   { event: 'Debate Duel', lead1: 'Ishan ', lead2: 'Khushi', phone: '+91 XXXXX XXXXX' },
-  { event: 'AI Nexus', lead1: 'Shlok ', lead2: 'Vatsal', phone: '+91 XXXXX XXXXX' },
-  { event: 'Pixel Perfect', lead1: 'Raj', lead2: 'Mahek', phone: '+91 XXXXX XXXXX' },
+  { event: 'AI Nexus', lead1: 'Shlok ', lead2: 'Vatsal', phone: '8733802611' },
+  { event: 'Pixel Perfect', lead1: 'Raj', lead2: 'Mahek', phone: '9016325452' },
   { event: 'Spaghetti Structure', lead1: 'Nisarg', lead2: 'Manish', phone: '+91 XXXXX XXXXX' },
-  { event: 'Idea Forge', lead1: 'Diya', lead2: 'Ayush', phone: '+91 XXXXX XXXXX' },
+  { event: 'Idea Forge', lead1: 'Diya', lead2: 'Ayush', phone: '8905043434' },
 ];
 
 export default function Poeple() {
@@ -95,7 +95,7 @@ export default function Poeple() {
                   <div className="text-xs sm:text-sm text-white/40">
                     {student.sem}
                   </div>
-                  <a href={`tel:${student.phone.replace(/\s+/g, '')}`} className="text-xs sm:text-sm font-mono text-white/40 text-right">
+                  <a className="text-xs sm:text-sm font-mono text-white/40 text-right">
                     {student.phone}
                   </a>
                 </motion.div>

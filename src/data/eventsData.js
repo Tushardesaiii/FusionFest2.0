@@ -9,10 +9,10 @@ export const eventsData = [
     img: 'https://images.pexels.com/photos/34804017/pexels-photo-34804017.jpeg',
       details:
       'Codestorm is Fusion Fest\'s flagship hackathon track. Teams solve theme-based problem statements, build a working prototype, and present to judges in a final demo round.',
-    teamSize: 'Solo to 4 members',
+    teamSize: 'Solo or Upto 4 members',
     eligibility: 'Open for all registered students',
     venue: 'GTU-SET',
-    joinLink: 'https://forms.gle/fusionfest-codestorm',
+    joinLink: 'https://docs.google.com/forms/d/e/1FAIpQLSd9D1pSiQqY1W_zOcgHQeePiSQ_AQ0_zrSA4kPJrgVQelZm9Q/viewform',
     sopLink: 'https://drive.google.com/file/d/1z1kLc7UBg4EW8-c6IOPkIDoW_dssgroF/view?usp=sharing',
     rules: [
       'Bring your own laptop and charger.',
@@ -29,12 +29,12 @@ export const eventsData = [
     day: 1,
     img: 'https://images.pexels.com/photos/2582937/pexels-photo-2582937.jpeg',
       details:
-      'Voltage Voyage tests your understanding of electrical fundamentals, troubleshooting skills, and design thinking through timed engineering tasks.',
-    teamSize: '2 members',
-    eligibility: 'Electrical and interdisciplinary teams',
+      'Voltage Voyage - Think in Systems.Build with Logic.Break Boundaries.Solve Reality.',
+    teamSize: '2 - 3 members',
+    eligibility: 'Open for Undergraduate Students',
     venue: 'Electronics Workshop Hall',
     joinLink: 'https://forms.gle/fusionfest-voltage-voyage',
-    sopLink: 'https://drive.google.com/file/d/1n88eAT5D7lVYtXJMiJqVHJVbhd8v9Hxh/view?usp=drive_link',
+    sopLink: 'https://docs.google.com/forms/d/e/1FAIpQLSc4bPncK960-e2ekbbjHWRQC__4Y127veVExjl1Gj2b-NHgYQ/viewform',
     rules: [
       'Safety protocol briefing is mandatory.',
       'Use only provided core components for scoring tasks.',
@@ -54,7 +54,7 @@ export const eventsData = [
     teamSize: '2 to 5 members',
     eligibility: 'Open for robotics teams',
     venue: 'Central Arena',
-    joinLink: 'https://forms.gle/fusionfest-robo-rumble',
+    joinLink: 'https://docs.google.com/forms/d/e/1FAIpQLScF6gFmgifAPW9mEq9ClEzU9SifvXHFGYZKMvjmkK5hpjso6g/viewform',
     sopLink: 'https://docs.google.com/document/d/1SnCf4npa_-vX6w-JG-CyxOOXVqN8WFvP/edit?usp=drive_link&ouid=115565421018406569944&rtpof=true&sd=true',
     rules: [
       'Robot dimensions must match event guidelines.',
@@ -72,10 +72,10 @@ export const eventsData = [
     img: 'https://images.pexels.com/photos/8199159/pexels-photo-8199159.jpeg',
       details:
       'Debate Duel sharpens communication, reasoning, and confidence through competitive speaking rounds judged on argument quality and delivery.',
-    teamSize: 'Solo or 2 members',
+    teamSize: '2 members',
     eligibility: 'Open category',
     venue: 'Seminar Block A',
-    joinLink: 'https://forms.gle/fusionfest-debate-duel',
+    joinLink: 'https://docs.google.com/forms/d/e/1FAIpQLSeyi_Cx5av80a1Rid-0VQ4tXg09cqtb-SSoG6KywTfrV4_71Q/viewform',
     sopLink: 'https://drive.google.com/file/d/REPLACE-WITH-DEBATE-DUEL-SOP/view?usp=sharing',
     rules: [
       'Topic is revealed before each round.',
@@ -114,15 +114,15 @@ export const eventsData = [
     img: 'https://images.pexels.com/photos/30530412/pexels-photo-30530412.jpeg',
       details:
       'AI Nexus challenges participants to design usable AI solutions with strong reasoning, data interpretation, and explainability.',
-    teamSize: '2 to 3 members',
+    teamSize: 'Minum 2 members, max 4 members',
     eligibility: 'AI, CSE, and open tech teams',
-    venue: 'AI Lab Complex',
+    venue: '328 Extended Lab',
     joinLink: 'https://forms.gle/fusionfest-ai-nexus',
     sopLink: 'https://drive.google.com/file/d/1xkUtty3_sXsRUuWtNrYfFXtNI71oM_e7/view?usp=drive_link',
     rules: [
-      'Use only permitted datasets in final round.',
-      'All code must be submitted before presentation.',
-      'Model explanation carries scoring weight.',
+      'Iot kits will be provided for Iot based problem statements.',
+      'All Ideas and Creation shall be explained',
+      'No pretrained Models are allowed for the final submission.',
     ],
   },
   {
@@ -134,16 +134,17 @@ export const eventsData = [
     day: 2,
     img: 'https://images.pexels.com/photos/70911/pexels-photo-70911.jpeg',
      details:
-      'Pixel Perfect emphasizes clarity, visual hierarchy, and user experience through timed wireframing and interface prototyping tasks.',
-    teamSize: '1 to 3 members',
+      'Welcome to Pixel Perfect - where design meets innovation. This document serves as the official Standard Operating Procedure for participants, judges, and coordinators. Read carefully and design boldly.',
+    teamSize: '1 to 2 members',
     eligibility: 'Open for designers and developers',
     venue: 'Design Studio',
-    joinLink: 'https://forms.gle/fusionfest-pixel-perfect',
+    joinLink: 'https://docs.google.com/forms/d/e/1FAIpQLSdcliRfjBmCigBjaaSjLlBXJy5jcKmOX4pOUZ3lmn3iN9HqYA/viewform',
     sopLink: 'https://drive.google.com/file/d/1STUL6QUxEdw-FyJUTuUZkliBNO5DzHDs/view?usp=drive_link',
     rules: [
-      'Present both concept and flow rationale.',
+      'Designs must be original and created during the event.',
       'Original work only; no template kits for scoring rounds.',
-      'Accessibility considerations add bonus marks.',
+      'On The spot Problem Statements will be given to the participants.',
+
     ],
   },
   {
@@ -159,12 +160,12 @@ export const eventsData = [
     teamSize: '2 to 4 members',
     eligibility: 'Open innovation track',
     venue: 'Auditorium 2',
-    joinLink: 'https://forms.gle/fusionfest-idea-forge',
+    joinLink: 'https://docs.google.com/forms/d/e/1FAIpQLSfK65GPSUgdjxgOSVC-t92fWIhP6yIrfM-4ZUgydxIB0wK0Ag/viewform',
     sopLink: 'https://docs.google.com/document/d/1NHcbl1agrpLvTCJO7xzaKu49eH26R3fi/edit?usp=drive_link&ouid=115565421018406569944&rtpof=true&sd=true',
     rules: [
       'Pitch deck must be concise and time-bound.',
       'Judging includes feasibility and clarity.',
-      'Q&A round is mandatory for finalists.',
+      'pitch time is Strickly 5 minutes.',
     ],
   },
 ];
