@@ -1,5 +1,5 @@
-import React from 'react';
-import { Link, useParams } from 'react-router-dom';
+import React, { useEffect } from 'react';
+import { Link, useNavigate, useParams } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import Navbar from './Navbar';
 import FooterSection from './FooterSection';
@@ -7,7 +7,17 @@ import { eventsData, getEventBySlug } from '../data/eventsData';
 
 export default function EventDetailsPage() {
   const { slug } = useParams();
+  const navigate = useNavigate();
   const event = getEventBySlug(slug);
+
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: 'auto' });
+  }, [slug]);
+
+  const handleBackToTimeline = (event) => {
+    event.preventDefault();
+    navigate('/', { state: { restoreTimelineScroll: true } });
+  };
 
   if (!event) {
     return (
@@ -38,6 +48,7 @@ export default function EventDetailsPage() {
       <main className="max-w-7xl mx-auto px-4 sm:px-6 pt-28 md:pt-36 pb-20 md:pb-24">
         <Link
           to="/"
+          onClick={handleBackToTimeline}
           className="inline-flex items-center gap-2 text-[11px] uppercase tracking-[0.3em] text-white/60 hover:text-[#FFCC00] transition-colors"
         >
           <span>←</span>

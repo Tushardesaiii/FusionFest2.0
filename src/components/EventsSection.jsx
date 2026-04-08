@@ -7,6 +7,10 @@ import { eventsData } from '../data/eventsData';
 export default function EventsSection() {
   const [showAllMobileBenefits, setShowAllMobileBenefits] = useState(false);
 
+  const handleEventClick = () => {
+    sessionStorage.setItem('timelineScrollY', String(window.scrollY));
+  };
+
   return (
     <section id="events-section" className="bg-[#050505] text-white py-24 md:py-40 px-4 sm:px-6 font-sans scroll-mt-28">
       <div className="max-w-7xl mx-auto">
@@ -100,7 +104,11 @@ export default function EventsSection() {
                        </div>
                     </div>
 
-                      <Link to={`/events/${event.slug}`} className="mt-8 md:mt-12 inline-flex w-full sm:w-auto items-center gap-6 group">
+                      <Link
+                        to={`/events/${event.slug}`}
+                        onClick={handleEventClick}
+                        className="mt-8 md:mt-12 inline-flex w-full sm:w-auto items-center gap-6 group"
+                      >
                        <div className="w-12 h-12 rounded-full border border-white/20 flex items-center justify-center group-hover:bg-[#FFCC00] group-hover:border-[#FFCC00] transition-all">
                           <span className="text-xl text-white group-hover:text-black">→</span>
                        </div>
