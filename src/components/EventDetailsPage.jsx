@@ -5,6 +5,31 @@ import Navbar from './Navbar';
 import FooterSection from './FooterSection';
 import { eventsData, getEventBySlug } from '../data/eventsData';
 
+function formatTimeLabel(time) {
+  if (!time || time === 'LATE') {
+    return 'Onwards';
+  }
+
+  const [rawHours, rawMinutes] = time.split(':').map(Number);
+  if (Number.isNaN(rawHours) || Number.isNaN(rawMinutes)) {
+    return time;
+  }
+
+  const period = rawHours >= 12 ? 'PM' : 'AM';
+  const hours = rawHours % 12 || 12;
+  const minutes = String(rawMinutes).padStart(2, '0');
+  return `${hours}:${minutes} ${period}`;
+}
+
+function formatTimeRange(start, end) {
+  const formattedStart = formatTimeLabel(start);
+  if (end === 'LATE') {
+    return `${formattedStart} onwards`;
+  }
+
+  return `${formattedStart} to ${formatTimeLabel(end)}`;
+}
+
 export default function EventDetailsPage() {
   const { slug } = useParams();
   const navigate = useNavigate();
@@ -64,7 +89,7 @@ export default function EventDetailsPage() {
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 md:gap-4 mb-6 md:mb-8">
               <div className="rounded-2xl border border-white/10 bg-white/2 p-5">
                 <p className="text-[10px] uppercase tracking-[0.3em] text-gray-500 mb-2">Time</p>
-                <p className="text-lg font-black">{event.start} to {event.end}</p>
+                <p className="text-lg font-black">{formatTimeRange(event.start, event.end)}</p>
               </div>
               <div className="rounded-2xl border border-white/10 bg-white/2 p-5">
                 <p className="text-[10px] uppercase tracking-[0.3em] text-gray-500 mb-2">Team Size</p>
@@ -136,7 +161,7 @@ export default function EventDetailsPage() {
               >
                 <p className="text-[10px] tracking-[0.3em] text-gray-500 uppercase mb-2">{item.tag}</p>
                 <h3 className="text-lg font-black uppercase tracking-tight mb-2">{item.name}</h3>
-                <p className="text-xs text-white/60">Day 0{item.day} • {item.start}</p>
+                <p className="text-xs text-white/60">Day 0{item.day} • {formatTimeRange(item.start, item.end)}</p>
               </Link>
             ))}
           </div>

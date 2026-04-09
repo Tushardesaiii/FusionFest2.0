@@ -4,6 +4,64 @@ import PrizesRewardsSection from './PrizesRewardsSection';
 import { Link, useNavigate } from 'react-router-dom';
 import { eventsData } from '../data/eventsData';
 
+function parseTimeToMinutes(time) {
+  if (!time || time === 'LATE') {
+    return null;
+  }
+
+  const [hours, minutes] = time.split(':').map(Number);
+  if (Number.isNaN(hours) || Number.isNaN(minutes)) {
+    return null;
+  }
+
+  return hours * 60 + minutes;
+}
+
+function formatTimeLabel(time) {
+  if (!time || time === 'LATE') {
+    return 'Onwards';
+  }
+
+  const [rawHours, rawMinutes] = time.split(':').map(Number);
+  if (Number.isNaN(rawHours) || Number.isNaN(rawMinutes)) {
+    return time;
+  }
+
+  const period = rawHours >= 12 ? 'PM' : 'AM';
+  const hours = rawHours % 12 || 12;
+  const minutes = String(rawMinutes).padStart(2, '0');
+  return `${hours}:${minutes} ${period}`;
+}
+
+function getDurationLabel(start, end) {
+  if (end === 'LATE') {
+    return 'Open Session';
+  }
+
+  const startMinutes = parseTimeToMinutes(start);
+  const endMinutes = parseTimeToMinutes(end);
+  if (startMinutes === null || endMinutes === null) {
+    return 'Session';
+  }
+
+  const totalMinutes = endMinutes >= startMinutes
+    ? endMinutes - startMinutes
+    : (24 * 60 - startMinutes) + endMinutes;
+
+  const hours = Math.floor(totalMinutes / 60);
+  const minutes = totalMinutes % 60;
+
+  if (hours && minutes) {
+    return `${hours}h ${minutes}m`;
+  }
+
+  if (hours) {
+    return `${hours}h`;
+  }
+
+  return `${minutes}m`;
+}
+
 export default function EventsSection() {
   const [showAllMobileBenefits, setShowAllMobileBenefits] = useState(false);
   const navigate = useNavigate();
@@ -51,8 +109,10 @@ export default function EventsSection() {
                   </span>
                   <p className="text-[#FF4500] text-[11px] font-black tracking-[0.4em] uppercase mb-1">DAY 0{event.day}</p>
                   <div className="flex flex-col md:items-end items-center">
-                    <span className="text-2xl md:text-3xl font-black tracking-tighter tabular-nums text-white uppercase">{event.start}</span>
-                    <span className="text-xs font-bold text-gray-500 tracking-widest -mt-1 uppercase">to {event.end}</span>
+                    <span className="text-2xl md:text-3xl font-black tracking-tighter tabular-nums text-white uppercase">{formatTimeLabel(event.start)}</span>
+                    <span className="text-xs font-bold text-gray-500 tracking-widest -mt-1 uppercase">
+                      {event.end === 'LATE' ? 'onwards' : `to ${formatTimeLabel(event.end)}`}
+                    </span>
                   </div>
                   <div className="h-0.5 w-12 bg-[#FFCC00] ml-auto mt-6 hidden md:block" />
                 </div>
@@ -114,7 +174,7 @@ export default function EventsSection() {
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-8 border-t border-white/5 pt-6 md:pt-10">
                        <div>
                          <p className="text-[9px] font-black text-gray-600 tracking-[0.4em] uppercase mb-2">Duration</p>
-                         <p className="text-sm font-bold tracking-widest">{event.end === 'LATE' ? 'Open Session' : '4.5 Hours'}</p>
+                         <p className="text-sm font-bold tracking-widest">{getDurationLabel(event.start, event.end)}</p>
                        </div>
                     </div>
 
