@@ -84,8 +84,8 @@ export const eventsData = [
     ],
   },
   {
-    slug: 'spotlight-stage',
-    name: 'SPOTLIGHT STAGE',
+    slug: 'Aakriti - 2.0',
+    name: 'AAKRITI 2.0',
     start: '5:00',
     end: 'LATE',
     tag: 'CULTURAL',
@@ -97,7 +97,7 @@ export const eventsData = [
     eligibility: 'Open for all participants',
     venue: 'Main Cultural Stage',
     joinLink: 'https://forms.gle/fusionfest-spotlight-stage',
-    sopLink: 'https://drive.google.com/file/d/REPLACE-WITH-SPOTLIGHT-STAGE-SOP/view?usp=sharing',
+    sopLink: '',
     rules: [
       'Track and setup files must be submitted on time.',
       'Performance should stay within time slot.',
@@ -162,12 +162,9 @@ export const eventsData = [
     teamSize: '2 to 4 members',
     eligibility: 'Open for engineering students',
     venue: 'Department of Civil (Structural) Engineering',
-    sopLink: 'https://drive.google.com/drive/folders/1EjyXDfJwKC3PsQZ0mCGeawITHTPnFK6L',
+    sopLink: 'https://drive.google.com/file/d/1ZsKXrPi6GWy6KJcEyCMZY8pRQH2GNCvd/view?usp=drive_link',
     rules: [
-      'Only dry spaghetti and adhesive may be used for the bridge model.',
-      'Bridge dimensions and weight must stay within the announced competition limits.',
-      'Judging will consider strength, efficiency, and observed failure behavior.',
-      'Teams should be prepared for live testing and post-failure inspection.',
+      'Read the official SOP for detailed guidelines.',
     ],
   },
   {
