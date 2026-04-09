@@ -23,7 +23,7 @@ function HeroSection() {
   }, [])
 
   return (
-    <section className="relative min-h-screen w-full bg-[#060010] flex flex-col items-center justify-center py-14 px-3 sm:px-6 md:py-20 md:px-8 overflow-hidden font-sans">
+    <section className="relative min-h-[88svh] md:min-h-screen w-full bg-[#060010] flex flex-col items-center justify-center py-10 sm:py-14 px-3 sm:px-6 md:py-20 md:px-8 overflow-hidden font-sans">
       
       {/* --- THE CORE (STAYS VISIBLE) --- */}
       <div className="absolute inset-0 z-0 flex items-center justify-center opacity-55 md:opacity-70 scale-[0.96] sm:scale-[0.9] md:scale-100">
@@ -40,6 +40,8 @@ function HeroSection() {
           backgroundColor="#060010"
         />
       </div>
+
+      <div className="absolute inset-x-0 bottom-0 h-46 bg-linear-to-t from-black via-[#060010]/90 to-transparent z-10 pt-6 pointer-events-none" />
 
      
 
@@ -85,10 +87,10 @@ function HeroSection() {
       </div>
 
       {/* --- BOTTOM: THE DATA HUD --- */}
-      <div className="absolute bottom-10 md:bottom-10 w-full px-3 md:px-10 z-30 flex flex-col md:flex-row justify-between items-center md:items-end gap-6 md:gap-10">
+      <div className="absolute bottom-12 sm:bottom-10 md:bottom-10 left-0 right-0 px-3 md:px-10 z-30 flex justify-center md:justify-between items-center md:items-end">
         
         {/* TIMER: MACHINED LOOK */}
-        <div className="grid grid-cols-4 gap-3 md:flex md:items-center md:gap-8 border-t md:border-t-0 md:border-l border-white/10 pt-3 md:pt-0 md:pl-8 w-full md:w-auto">
+        <div className="grid grid-cols-4 gap-3 md:flex md:items-center md:gap-8 w-full max-w-105 md:w-auto rounded-2xl border border-white/10 bg-black backdrop-blur-sm px-3 py-3 md:bg-transparent md:backdrop-blur-0 md:rounded-none md:border-0 md:px-0 md:py-0 md:border-l md:border-white/10 md:pl-8">
           {[
             { v: timer.days, l: 'DAYS' },
             { v: timer.hours, l: 'HOURS' },

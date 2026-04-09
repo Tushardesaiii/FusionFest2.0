@@ -1,14 +1,16 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import PrizesRewardsSection from './PrizesRewardsSection';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { eventsData } from '../data/eventsData';
 
 export default function EventsSection() {
   const [showAllMobileBenefits, setShowAllMobileBenefits] = useState(false);
+  const navigate = useNavigate();
 
-  const handleEventClick = () => {
+  const handleEventClick = (slug) => {
     sessionStorage.setItem('timelineScrollY', String(window.scrollY));
+    navigate(`/events/${slug}`);
   };
 
   return (
@@ -16,10 +18,10 @@ export default function EventsSection() {
       <div className="max-w-7xl mx-auto">
         
         {/* --- 1. ARCHITECTURAL HEADER --- */}
-        <div className="mb-24 md:mb-40 flex flex-col md:flex-row justify-between items-end border-b border-white/10 pb-10 md:pb-16">
-          <div className="max-w-2xl">
+        <div className="mb-24 md:mb-40 flex flex-col items-start md:items-center border-b border-white/10 pb-10 md:pb-16">
+          <div className="w-full max-w-2xl md:max-w-none md:text-center">
            
-            <h2 className="text-4xl sm:text-5xl md:text-5xl font-black tracking-tighter leading-[0.85] md:leading-[0.8] uppercase">
+            <h2 className="text-4xl sm:text-5xl md:text-5xl font-black tracking-tighter leading-[0.85] md:leading-[0.8] uppercase text-left md:text-center">
               Event<br /><span className="text-white/20 italic">Timeline.</span>
             </h2>
           </div>
@@ -71,7 +73,14 @@ export default function EventsSection() {
                   
                   {/* Image Card (Strictly Professional 9:16) */}
                   <div className="relative w-full max-w-full md:w-85 shrink-0 group">
-                    <div className="relative aspect-video md:aspect-9/16 rounded-[20px] overflow-hidden">
+                    <Link
+                      to={`/events/${event.slug}`}
+                      onClick={(e) => {
+                        e.preventDefault();
+                        handleEventClick(event.slug);
+                      }}
+                      className="block relative aspect-video md:aspect-9/16 rounded-[20px] overflow-hidden"
+                    >
                       <img 
                         src={event.img} 
                         className="w-full h-full object-cover  " 
@@ -80,40 +89,45 @@ export default function EventsSection() {
                       <div className="absolute inset-0 " />
                       
                      
-                    </div>
+                    </Link>
                   </div>
 
                   {/* Information Content */}
                   <div className="flex-1 pt-0 md:pt-6 text-left">
-                    <div className="inline-block px-4 py-1 bg-white/5 border border-white/10 rounded-full text-[10px] font-bold tracking-[0.3em] text-gray-500 uppercase mb-5 md:mb-8">
+                    <div className="inline-block px-3 sm:px-4 py-1 bg-white/5 border border-white/10 rounded-full text-[8px] sm:text-[10px] font-bold tracking-[0.25em] sm:tracking-[0.3em] text-gray-500 uppercase mb-5 md:mb-8">
                       // {event.tag}
                     </div>
                     
-                    <h3 className="text-3xl sm:text-5xl md:text-7xl font-black tracking-tighter leading-none mb-6 md:mb-10 hover:text-[#FFCC00] transition-colors uppercase">
-                      {event.name}
-                    </h3>
+                    <Link
+                      to={`/events/${event.slug}`}
+                      onClick={(e) => {
+                        e.preventDefault();
+                        handleEventClick(event.slug);
+                      }}
+                      className="block"
+                    >
+                      <h3 className="text-3xl sm:text-5xl md:text-7xl font-black tracking-tighter leading-none mb-6 md:mb-10 hover:text-[#FFCC00] transition-colors uppercase">
+                        {event.name}
+                      </h3>
+                    </Link>
 
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-8 border-t border-white/5 pt-6 md:pt-10">
                        <div>
                          <p className="text-[9px] font-black text-gray-600 tracking-[0.4em] uppercase mb-2">Duration</p>
                          <p className="text-sm font-bold tracking-widest">{event.end === 'LATE' ? 'Open Session' : '4.5 Hours'}</p>
                        </div>
-                       <div>
-                         <p className="text-[9px] font-black text-gray-600 tracking-[0.4em] uppercase mb-2">Access</p>
-                         <p className="text-sm font-bold tracking-widest underline decoration-[#FFCC00]">Tier 01 // All</p>
-                       </div>
                     </div>
 
-                      <Link
-                        to={`/events/${event.slug}`}
-                        onClick={handleEventClick}
-                        className="mt-8 md:mt-12 inline-flex w-full sm:w-auto items-center gap-6 group"
-                      >
-                       <div className="w-12 h-12 rounded-full border border-white/20 flex items-center justify-center group-hover:bg-[#FFCC00] group-hover:border-[#FFCC00] transition-all">
-                          <span className="text-xl text-white group-hover:text-black">→</span>
-                       </div>
-                       <span className="text-[10px] font-black tracking-[0.4em] uppercase opacity-40 group-hover:opacity-100 transition-opacity underline decoration-white/20 underline-offset-8">Read Protocol</span>
-                      </Link>
+                    <Link
+                      to={`/events/${event.slug}`}
+                      onClick={(e) => {
+                        e.preventDefault();
+                        handleEventClick(event.slug);
+                      }}
+                      className="mt-6 self-center inline-flex items-center justify-center rounded-full border border-white/20 px-5 py-3 text-[10px] font-black tracking-[0.3em] uppercase text-white hover:bg-[#FFCC00] hover:text-black hover:border-[#FFCC00] transition-colors"
+                    >
+                      Open Details
+                    </Link>
                   </div>
 
                 </div>
