@@ -15,6 +15,10 @@ const facultyHeads = [
   { role: 'Convener', name: 'Dr. Komal Borisagar', desig: 'Associate Professor, GTU-SET' },
   { role: 'Coordinator', name: 'Prof. Anamika Mittal', desig: 'GTU-SET' },
   { role: 'Coordinator', name: 'Dr. Aanal Raval', desig: 'GTU-SET' },
+{ role: 'Coordinator', name: 'Dr. Kaushik Gondaliya', desig: 'GTU-SET' },
+ { role: 'Coordinator', name: 'Prof. Aayushi Garg', desig: 'GTU-SET' },
+ 
+
 ];
 
 const studentCoordinators = [
@@ -32,7 +36,7 @@ const eventSpecificCoordinators = [
   { event: 'Debate Duel', lead1: 'Ishan ', lead2: 'Khushi', phone: '8128145634' },
   { event: 'AI Nexus', lead1: 'Shlok ', lead2: 'Vatsal', phone: '8733802611' },
   { event: 'Pixel Perfect', lead1: 'Raj', lead2: 'Mahek', phone: '9016325452' },
-  { event: 'Spaghetti Structure', lead1: 'Nisarg', lead2: 'Manish', phone: '' },
+  { event: 'Spaghetti Structure', lead1: 'Manish', lead2: 'Manisha', phone: '' },
   { event: 'Idea Forge', lead1: 'Diya', lead2: 'Ayush', phone: '8905043434' },
 ];
 
