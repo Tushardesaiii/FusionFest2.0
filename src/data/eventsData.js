@@ -6,14 +6,14 @@ export const eventsData = [
     end: '1:30',
     tag: 'HACKATHON',
     day: 1,
-    img: 'https://images.pexels.com/photos/34804017/pexels-photo-34804017.jpeg',
+    img: 'https://images.pexels.com/photos/6424590/pexels-photo-6424590.jpeg',
       details:
       'Codestorm is Fusion Fest\'s flagship hackathon track. Teams solve theme-based problem statements, build a working prototype, and present to judges in a final demo round.',
     teamSize: 'Solo or Upto 4 members',
     eligibility: 'Open for all registered students',
     venue: 'GTU-SET',
     joinLink: 'https://docs.google.com/forms/d/e/1FAIpQLSd9D1pSiQqY1W_zOcgHQeePiSQ_AQ0_zrSA4kPJrgVQelZm9Q/viewform',
-    sopLink: 'https://drive.google.com/file/d/1z1kLc7UBg4EW8-c6IOPkIDoW_dssgroF/view?usp=sharing',
+    sopLink: 'https://drive.google.com/file/d/1oB6u-o79QTvE8TbkK78F1paRxJ5IEuq2/view?usp=drive_link',
     rules: [
       'Bring your own laptop and charger.',
       'Internet use is allowed unless restricted by challenge mode.',
@@ -33,8 +33,8 @@ export const eventsData = [
     teamSize: '2 - 3 members',
     eligibility: 'Open for Undergraduate Students',
     venue: 'Electronics Workshop Hall',
-    joinLink: 'https://forms.gle/fusionfest-voltage-voyage',
-    sopLink: 'https://docs.google.com/forms/d/e/1FAIpQLSc4bPncK960-e2ekbbjHWRQC__4Y127veVExjl1Gj2b-NHgYQ/viewform',
+    joinLink: 'https://docs.google.com/forms/d/e/1FAIpQLSc4bPncK960-e2ekbbjHWRQC__4Y127veVExjl1Gj2b-NHgYQ/viewform',
+    sopLink: 'https://drive.google.com/file/d/1j8KEcXctLFE-nqCCrNl45p2iDlg6Yw5h/view?usp=drive_link',
     rules: [
       'Safety protocol briefing is mandatory.',
       'Use only provided core components for scoring tasks.',
@@ -48,14 +48,14 @@ export const eventsData = [
     end: '4:00',
     tag: 'ROBOTICS',
     day: 1,
-    img: 'https://images.pexels.com/photos/30530412/pexels-photo-30530412.jpeg',
+    img: 'https://images.pexels.com/photos/7868836/pexels-photo-7868836.jpeg',
      details:
       'Robo Rumble is a high-energy robotics competition where teams push performance, stability, and strategy through action-packed arena challenges.',
     teamSize: '2 to 5 members',
     eligibility: 'Open for robotics teams',
     venue: 'Central Arena',
     joinLink: 'https://docs.google.com/forms/d/e/1FAIpQLScF6gFmgifAPW9mEq9ClEzU9SifvXHFGYZKMvjmkK5hpjso6g/viewform',
-    sopLink: 'https://docs.google.com/document/d/1SnCf4npa_-vX6w-JG-CyxOOXVqN8WFvP/edit?usp=drive_link&ouid=115565421018406569944&rtpof=true&sd=true',
+    sopLink: 'https://drive.google.com/file/d/1T0Hk54wRRxKLIoz2aMBRhr-VQRKBTvhB/view?usp=drive_link',
     rules: [
       'Robot dimensions must match event guidelines.',
       'Only approved power systems are allowed.',
@@ -69,14 +69,14 @@ export const eventsData = [
     end: '4:00',
     tag: 'SPEECH',
     day: 1,
-    img: 'https://images.pexels.com/photos/8199159/pexels-photo-8199159.jpeg',
+    img: 'https://static.vecteezy.com/system/resources/thumbnails/023/883/165/small_2x/politics-meeting-debate-communication-business-election-concept-vector.jpg',
       details:
       'Debate Duel sharpens communication, reasoning, and confidence through competitive speaking rounds judged on argument quality and delivery.',
     teamSize: '2 members',
     eligibility: 'Open category',
     venue: 'Seminar Block A',
     joinLink: 'https://docs.google.com/forms/d/e/1FAIpQLSeyi_Cx5av80a1Rid-0VQ4tXg09cqtb-SSoG6KywTfrV4_71Q/viewform',
-    sopLink: 'https://drive.google.com/file/d/REPLACE-WITH-DEBATE-DUEL-SOP/view?usp=sharing',
+    sopLink: 'https://drive.google.com/file/d/1Ejf2kcxhkAD3DhqobWCUTvGczJRpUhdy/view?usp=drive_link',
     rules: [
       'Topic is revealed before each round.',
       'Respectful conduct is mandatory.',
@@ -117,7 +117,7 @@ export const eventsData = [
     teamSize: 'Minum 2 members, max 4 members',
     eligibility: 'AI, CSE, and open tech teams',
     venue: '328 Extended Lab',
-    joinLink: 'https://forms.gle/fusionfest-ai-nexus',
+    joinLink: 'https://docs.google.com/forms/d/e/1FAIpQLSdUBH4N-5BrAjB1aoVoaRhF4M8_Q1F2uwHtgWUYGEcwVXpPIw/viewform?usp=publish-editor',
     sopLink: 'https://drive.google.com/file/d/1xkUtty3_sXsRUuWtNrYfFXtNI71oM_e7/view?usp=drive_link',
     rules: [
       'Iot kits will be provided for Iot based problem statements.',
@@ -139,12 +139,35 @@ export const eventsData = [
     eligibility: 'Open for designers and developers',
     venue: 'Design Studio',
     joinLink: 'https://docs.google.com/forms/d/e/1FAIpQLSdcliRfjBmCigBjaaSjLlBXJy5jcKmOX4pOUZ3lmn3iN9HqYA/viewform',
-    sopLink: 'https://drive.google.com/file/d/1STUL6QUxEdw-FyJUTuUZkliBNO5DzHDs/view?usp=drive_link',
+    sopLink: 'https://drive.google.com/file/d/1vBKrE-9cwQk0UvRNMGocv__hBaLgEcSZ/view?usp=drive_link',
     rules: [
       'Designs must be original and created during the event.',
       'Original work only; no template kits for scoring rounds.',
       'On The spot Problem Statements will be given to the participants.',
 
+    ],
+  },
+  {
+    slug: 'spaghetti-structure',
+    name: 'SPAGHETTI STRUCTURE',
+    start: '1:00',
+    end: '4:00',
+    tag: 'STRUCTURAL',
+    day: 2,
+    img: 'https://www.sciencemuseumgroup.org.uk/sites/default/files/styles/carousel/public/2022-07/NEW-SS-Step-2_0.jpg?itok=pGwPV1hh',
+    summary:
+      'A hands-on bridge-building challenge where teams design a dry spaghetti structure for maximum strength, efficiency, and stability.',
+    details:
+      'The Spaghetti Bridge & Building Competition is a flagship hands-on event of the GTU-SET Tech Fest, organized by the Department of Civil (Structural) Engineering under the guidance of Dr. J. A. Amin, Professor, GTU-SET. The competition bridges theoretical structural engineering with real-world application, pushing students to apply structural analysis, load-to-weight efficiency, failure mode analysis, the engineering design process, teamwork, time management, and rapid problem solving. Teams must design, construct, and test a bridge using only dry spaghetti and adhesive within the specified dimensional and weight constraints, while drawing on concepts from Design of High-Rise Building Structures, Advanced Design of Steel Structures, and Earthquake Resistant Design of Structures.',
+    teamSize: '2 to 4 members',
+    eligibility: 'Open for engineering students',
+    venue: 'Department of Civil (Structural) Engineering',
+    sopLink: 'https://drive.google.com/drive/folders/1EjyXDfJwKC3PsQZ0mCGeawITHTPnFK6L',
+    rules: [
+      'Only dry spaghetti and adhesive may be used for the bridge model.',
+      'Bridge dimensions and weight must stay within the announced competition limits.',
+      'Judging will consider strength, efficiency, and observed failure behavior.',
+      'Teams should be prepared for live testing and post-failure inspection.',
     ],
   },
   {
@@ -161,7 +184,7 @@ export const eventsData = [
     eligibility: 'Open innovation track',
     venue: 'Auditorium 2',
     joinLink: 'https://docs.google.com/forms/d/e/1FAIpQLSfK65GPSUgdjxgOSVC-t92fWIhP6yIrfM-4ZUgydxIB0wK0Ag/viewform',
-    sopLink: 'https://docs.google.com/document/d/1NHcbl1agrpLvTCJO7xzaKu49eH26R3fi/edit?usp=drive_link&ouid=115565421018406569944&rtpof=true&sd=true',
+    sopLink: 'https://drive.google.com/file/d/15O3pjl1zNIzoUblln5ZSFoOayN38zVUF/view?usp=drive_link',
     rules: [
       'Pitch deck must be concise and time-bound.',
       'Judging includes feasibility and clarity.',

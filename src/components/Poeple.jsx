@@ -28,11 +28,11 @@ const studentCoordinators = [
 const eventSpecificCoordinators = [
   { event: 'Codestorm', lead1: 'Vivek', lead2: 'Nikunj', phone: '8320607439' },
   { event: 'Voltage Voyage', lead1: 'Darsh', lead2: 'Krupesh', phone: '6353597697' },
-  { event: 'Robo Rumble', lead1: 'Zeel ', lead2: 'Sarva', phone: '+91 XXXXX XXXXX' },
-  { event: 'Debate Duel', lead1: 'Ishan ', lead2: 'Khushi', phone: '+91 XXXXX XXXXX' },
+  { event: 'Robo Rumble', lead1: 'Krishanraj', lead2: '', phone: 'XXXXX XXXXX' },
+  { event: 'Debate Duel', lead1: 'Ishan ', lead2: 'Khushi', phone: '8128145634' },
   { event: 'AI Nexus', lead1: 'Shlok ', lead2: 'Vatsal', phone: '8733802611' },
   { event: 'Pixel Perfect', lead1: 'Raj', lead2: 'Mahek', phone: '9016325452' },
-  { event: 'Spaghetti Structure', lead1: 'Nisarg', lead2: 'Manish', phone: '+91 XXXXX XXXXX' },
+  { event: 'Spaghetti Structure', lead1: 'Nisarg', lead2: 'Manish', phone: '' },
   { event: 'Idea Forge', lead1: 'Diya', lead2: 'Ayush', phone: '8905043434' },
 ];
 

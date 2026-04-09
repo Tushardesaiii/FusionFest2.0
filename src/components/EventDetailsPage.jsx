@@ -99,7 +99,7 @@ export default function EventDetailsPage() {
               <img src={event.img} alt={event.name} className="w-full h-full object-cover" />
             </div>
             <div className="p-6 border-t border-white/10">
-              <p className="text-sm text-gray-300 leading-relaxed mb-6">{event.summary}</p>
+              <p className="text-sm text-gray-300 leading-relaxed mb-6">{event.summary || event.details}</p>
               <div className="grid gap-3">
                 <a
                   href={event.sopLink}
@@ -109,14 +109,16 @@ export default function EventDetailsPage() {
                 >
                   Read Event SOP
                 </a>
-                <a
-                  href={event.joinLink}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="inline-flex w-full items-center justify-center rounded-full bg-[#FFCC00] px-6 py-3 text-xs font-black uppercase tracking-[0.25em] text-black hover:bg-[#ffd84d] transition-colors"
-                >
-                  Join This Event
-                </a>
+                {event.joinLink ? (
+                  <a
+                    href={event.joinLink}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="inline-flex w-full items-center justify-center rounded-full bg-[#FFCC00] px-6 py-3 text-xs font-black uppercase tracking-[0.25em] text-black hover:bg-[#ffd84d] transition-colors"
+                  >
+                    Join This Event
+                  </a>
+                ) : null}
               </div>
             </div>
           </motion.aside>
