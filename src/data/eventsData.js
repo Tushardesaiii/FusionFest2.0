@@ -96,8 +96,8 @@ export const eventsData = [
     teamSize: 'Solo to group (up to 8)',
     eligibility: 'Open for all participants',
     venue: 'Main Cultural Stage',
-    joinLink: 'https://forms.gle/fusionfest-spotlight-stage',
-    sopLink: '',
+    joinLink: 'https://forms.gle/r7Bwk2dm3xtuxnBVA',
+    
     rules: [
       'Track and setup files must be submitted on time.',
       'Performance should stay within time slot.',

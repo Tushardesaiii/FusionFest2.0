@@ -100,14 +100,16 @@ export default function EventDetailsPage() {
             </div>
             <div className="p-6 border-t border-white/10">
               <div className="grid gap-3">
-                <a
-                  href={event.sopLink}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="inline-flex w-full items-center justify-center rounded-full border border-white/15 px-6 py-3 text-xs font-black uppercase tracking-[0.25em] text-black bg-white hover:bg-black hover:text-white transition-colors"
-                >
-                  Read Event SOP
-                </a>
+                {event.sopLink ? (
+                  <a
+                    href={event.sopLink}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="inline-flex w-full items-center justify-center rounded-full border border-white/15 px-6 py-3 text-xs font-black uppercase tracking-[0.25em] text-black bg-white hover:bg-black hover:text-white transition-colors"
+                  >
+                    Read Event SOP
+                  </a>
+                ) : null}
                 {event.joinLink ? (
                   <a
                     href={event.joinLink}
