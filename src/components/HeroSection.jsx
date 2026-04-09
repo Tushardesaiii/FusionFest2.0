@@ -23,7 +23,7 @@ function HeroSection() {
   }, [])
 
   return (
-    <section className="relative min-h-[88svh] md:min-h-screen w-full bg-[#060010] flex flex-col items-center justify-center py-10 sm:py-14 px-3 sm:px-6 md:py-20 md:px-8 overflow-hidden font-sans">
+    <section className="relative min-h-[88svh] md:min-h-screen lg:min-h-[94svh] w-full bg-[#060010] flex flex-col items-center justify-center py-10 sm:py-14 px-3 sm:px-6 md:py-20 md:px-8 overflow-hidden font-sans">
       
       {/* --- THE CORE (STAYS VISIBLE) --- */}
       <div className="absolute inset-0 z-0 flex items-center justify-center opacity-55 md:opacity-70 scale-[0.96] sm:scale-[0.9] md:scale-100">

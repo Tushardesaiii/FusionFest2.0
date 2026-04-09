@@ -95,11 +95,10 @@ export default function EventDetailsPage() {
             animate={{ opacity: 1, y: 0 }}
             className="rounded-3xl border border-white/10 bg-white/2 overflow-hidden"
           >
-            <div className="aspect-4/3 md:aspect-4/5">
+            <div className="aspect-4/3 md:aspect-4/5 lg:aspect-5/6">
               <img src={event.img} alt={event.name} className="w-full h-full object-cover" />
             </div>
             <div className="p-6 border-t border-white/10">
-              <p className="text-sm text-gray-300 leading-relaxed mb-6">{event.summary || event.details}</p>
               <div className="grid gap-3">
                 <a
                   href={event.sopLink}
