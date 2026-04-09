@@ -23,10 +23,10 @@ function HeroSection() {
   }, [])
 
   return (
-    <section className="relative min-h-screen w-full bg-[#060010] flex flex-col items-center justify-center py-16 px-4 sm:px-6 md:py-20 md:px-8 overflow-hidden font-sans">
+    <section className="relative min-h-screen w-full bg-[#060010] flex flex-col items-center justify-center py-14 px-3 sm:px-6 md:py-20 md:px-8 overflow-hidden font-sans">
       
       {/* --- THE CORE (STAYS VISIBLE) --- */}
-      <div className="absolute inset-0 z-0 flex items-center justify-center opacity-50 md:opacity-70 scale-[0.78] md:scale-100">
+      <div className="absolute inset-0 z-0 flex items-center justify-center opacity-55 md:opacity-70 scale-[0.96] sm:scale-[0.9] md:scale-100">
         <EvilEye
           eyeColor="#FF6F37"
           intensity={1.5}
@@ -44,7 +44,7 @@ function HeroSection() {
      
 
       {/* --- CENTER: THE "GOOD" TYPOGRAPHY --- */}
-      <div className="relative z-20 flex flex-col items-center select-none pointer-events-none px-1 text-center">
+      <div className="relative z-20 flex flex-col items-center select-none pointer-events-none px-1 text-center w-full max-w-[100vw]">
         
        
 
@@ -55,7 +55,7 @@ function HeroSection() {
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8 }}
             style={{ fontStyle: 'italic' }}
-            className="text-[clamp(3rem,18vw,6.5rem)] md:text-[clamp(4.5rem,16vw,12rem)] font-black leading-[0.72] tracking-[-0.07em] text-white uppercase"
+            className="text-[clamp(2.8rem,17vw,6.5rem)] md:text-[clamp(4.5rem,16vw,12rem)] font-black leading-[0.72] tracking-[-0.07em] text-white uppercase"
           >
             FUSION
           </motion.h1>
@@ -65,7 +65,7 @@ function HeroSection() {
             animate={{ opacity: 1, x: 0 }}
             transition={{ delay: 0.2, duration: 0.8 }}
             style={{ fontStyle: 'italic' }}
-            className="text-[clamp(3rem,18vw,6.5rem)] md:text-[clamp(4.5rem,16vw,12rem)] font-black border-rounded bg-white border-white leading-[0.72] tracking-[-0.07em] text-[#FFCC00] uppercase mt-[-1vw]"
+            className="text-[clamp(2.8rem,17vw,6.5rem)] md:text-[clamp(4.5rem,16vw,12rem)] font-black border-rounded bg-white border-white leading-[0.72] tracking-[-0.07em] text-[#FFCC00] uppercase mt-[-0.5vw]"
           >
             FEST 2.0
           </motion.h1>
@@ -74,18 +74,18 @@ function HeroSection() {
         {/* THE NERDY CHALLENGE (Modern Outline Style) */}
         <motion.div 
           initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.6 }}
-          className="mt-8 md:mt-12 group flex items-center gap-3 md:gap-6"
+          className="mt-6 md:mt-12 group flex items-center gap-3 md:gap-6"
         >
-          <div className="h-px w-6 md:w-8 bg-white/10" />
+          <div className="hidden sm:block h-px w-6 md:w-8 bg-white/10" />
           <p className="text-[10px] sm:text-[15px] font-black text-white tracking-[0.3em] sm:tracking-[0.5em] uppercase italic group-hover:text-[#FFCC00] transition-colors">
             Are you nerdy enough to participate?
           </p>
-          <div className="h-px w-6 md:w-8 bg-white/10" />
+          <div className="hidden sm:block h-px w-6 md:w-8 bg-white/10" />
         </motion.div>
       </div>
 
       {/* --- BOTTOM: THE DATA HUD --- */}
-      <div className="absolute bottom-6 md:bottom-10 w-full px-4 md:px-10 z-30 flex flex-col md:flex-row justify-between items-center md:items-end gap-6 md:gap-10">
+      <div className="absolute bottom-10 md:bottom-10 w-full px-3 md:px-10 z-30 flex flex-col md:flex-row justify-between items-center md:items-end gap-6 md:gap-10">
         
         {/* TIMER: MACHINED LOOK */}
         <div className="grid grid-cols-4 gap-3 md:flex md:items-center md:gap-8 border-t md:border-t-0 md:border-l border-white/10 pt-3 md:pt-0 md:pl-8 w-full md:w-auto">
