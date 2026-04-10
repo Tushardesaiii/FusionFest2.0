@@ -118,7 +118,7 @@ export const eventsData = [
     eligibility: 'AI, CSE, and open tech teams',
     venue: '328 Extended Lab',
     joinLink: 'https://docs.google.com/forms/d/e/1FAIpQLSdUBH4N-5BrAjB1aoVoaRhF4M8_Q1F2uwHtgWUYGEcwVXpPIw/viewform?usp=publish-editor',
-    sopLink: 'https://drive.google.com/file/d/1xkUtty3_sXsRUuWtNrYfFXtNI71oM_e7/view?usp=drive_link',
+    sopLink: 'https://drive.google.com/file/d/1xWelwkDuqqB5hI7oAK2JKhLeUZcArjXt/view?usp=drive_link',
     rules: [
       'Iot kits will be provided for Iot based problem statements.',
       'All Ideas and Creation shall be explained',
@@ -177,7 +177,7 @@ export const eventsData = [
     img: 'https://images.pexels.com/photos/11605252/pexels-photo-11605252.jpeg',
    details:
       'Idea Forge is built for innovators who can identify a problem, validate a solution path, and communicate impact through concise pitching.',
-    teamSize: '2 to 4 members',
+    teamSize: '1 to 4 members',
     eligibility: 'Open innovation track',
     venue: 'Auditorium 2',
     joinLink: 'https://docs.google.com/forms/d/e/1FAIpQLSfK65GPSUgdjxgOSVC-t92fWIhP6yIrfM-4ZUgydxIB0wK0Ag/viewform',
