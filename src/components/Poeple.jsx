@@ -32,7 +32,7 @@ const studentCoordinators = [
 const eventSpecificCoordinators = [
   { event: 'Codestorm', lead1: 'Vivek', lead2: 'Nikunj', phone: '8320607439' },
   { event: 'Voltage Voyage', lead1: 'Darsh', lead2: 'Krupesh', phone: '6353597697' },
-  { event: 'Robo Rumble', lead1: 'Krishanraj', lead2: 'Mahir', phone: 'XXXXX XXXXX' },
+  { event: 'Robo Rumble', lead1: 'Krishanraj', lead2: 'Mahir', phone: '9499877888' },
   { event: 'Debate Duel', lead1: 'Ishan ', lead2: 'Khushi', phone: '8128145634' },
   { event: 'AI Nexus', lead1: 'Shlok ', lead2: 'Vatsal', phone: '8733802611' },
   { event: 'Pixel Perfect', lead1: 'Raj', lead2: 'Mahek', phone: '9016325452' },
