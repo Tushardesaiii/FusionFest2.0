@@ -99,22 +99,6 @@ function Navbar() {
           </div>
         </div>
 
-        {/* RIGHT */}
-        <div className="flex items-center gap-2 md:gap-4">
-          <a
-            href="#events-section"
-            className="group relative overflow-hidden px-4 md:px-6 py-2 bg-white rounded-md active:scale-95 transition"
-          >
-            <div className="absolute inset-0 bg-[#FFCC00] -translate-y-full group-hover:translate-y-0 transition-transform duration-300" />
-
-            <div className="relative z-10 flex items-center gap-2">
-              <span className="text-[9px] md:text-[10px] font-bold tracking-widest text-black uppercase">
-                Register
-              </span>
-              <span className="text-black text-xs">→</span>
-            </div>
-          </a>
-        </div>
 
         {/* TOP LINE */}
         {isScrolled && (
