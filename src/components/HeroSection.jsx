@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import { motion } from 'framer-motion'
 import EvilEye from './EvilEye'; 
 
-const targetDate = new Date('2026-04-16T09:00:00')
+const targetDate = new Date('2026-04-17T09:00:00')
 
 function getCountdown() {
   const diff = Math.max(0, targetDate.getTime() - Date.now())
