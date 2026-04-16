@@ -23,7 +23,7 @@ function FooterSection() {
             <p className="text-[10px] font-black uppercase tracking-[0.35em] text-white/40 mb-4">Navigate</p>
             <div className="flex flex-col gap-3 text-sm text-gray-300">
               <a href="#events-section" className="transition hover:text-[#FFCC00]">Events</a>
-              <a href="#register" className="transition hover:text-[#FFCC00]">Register</a>
+              <span className="cursor-not-allowed text-red-300/90">Registrations Closed</span>
               <a href="#faq-section" className="transition hover:text-[#FFCC00]">FAQ</a>
             </div>
           </div>

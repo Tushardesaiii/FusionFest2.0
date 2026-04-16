@@ -4,6 +4,7 @@ import Navbar from './components/Navbar'
 import HeroSection from './components/HeroSection'
 import EventsSection from './components/EventsSection'
 import Poeple from './components/Poeple'
+import SponsorsSection from './components/SponsorsSection'
 import FAQSection from './components/FAQSection'
 import FooterSection from './components/FooterSection'
 
@@ -25,6 +26,7 @@ function App() {
       <HeroSection />
       <EventsSection />
       <Poeple />
+      <SponsorsSection />
       <FAQSection />
       <FooterSection />
     </div>

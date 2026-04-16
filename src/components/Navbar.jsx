@@ -99,6 +99,15 @@ function Navbar() {
           </div>
         </div>
 
+        {/* RIGHT: REGISTRATION STATUS */}
+        <div className="flex items-center">
+          <div className="rounded-full border border-red-300/45 bg-red-500/10 px-3 py-1.5 sm:px-4 sm:py-2 shadow-[0_0_24px_rgba(239,68,68,0.25)]">
+            <p className="text-[9px] sm:text-[10px] font-extrabold tracking-[0.14em] text-red-200 uppercase whitespace-nowrap">
+              Registrations Closed
+            </p>
+          </div>
+        </div>
+
 
         {/* TOP LINE */}
         {isScrolled && (
